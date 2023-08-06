@@ -1,0 +1,142 @@
+.parentDiv {
+    width: 100%;
+}
+
+.header {
+    font-family: URW Chancery L, cursive;
+    font-size: 270%;
+    margin: 0%;
+    color: rgb(255, 170, 255);
+    position: relative;
+    margin-top: -50px;
+    top: 70px;
+}
+
+.img {
+    object-fit: contain;
+    width: 400px;
+    height: 100%;
+}
+
+.mainStatsHeader {
+    margin: 6px;
+    text-decoration: underline;
+    color: rgb(255, 239, 147);
+}
+
+.mainStats1 {
+    border: solid gold;
+    margin: 5px 20px 0px 20px;
+}
+
+.mainStats2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -13px;
+}
+
+.challengesHeader {
+    margin: 6px;
+    text-decoration: underline;
+    color: rgb(255, 182, 182);
+}
+
+.challenges1 {
+    border: solid red;
+    margin: 5px 20px 0px 20px;
+}
+
+.challenges2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -13px;
+}
+
+.powersHeader {
+    margin: 6px;
+    text-decoration: underline;
+    color: rgb(255, 186, 255);
+}
+
+.powers1 {
+    border: solid purple;
+    margin: 5px 20px 0px 20px;
+}
+
+.powers2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -13px;
+}
+
+.inventoryHeader {
+    margin: 6px;
+    text-decoration: underline;
+    color: rgb(255, 244, 230);
+}
+
+.inventory {
+    border: solid burlywood;
+    margin: 5px 20px 0px 20px;
+}
+
+.equipped1 {
+    border: solid orange;
+    margin: 5px 10px 0px 10px;
+}
+
+.equipped2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -13px;
+}
+
+.pouch1 {
+    border: solid greenyellow;
+    margin: 5px 10px 7px 10px;
+}
+
+.pouch2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -13px;
+}
+
+.story {
+    border: solid rgb(0, 0, 207);
+    margin: 5px 20px 0px 20px;
+}
+
+.story h4 {
+    margin-top: 5px;
+}
+
+.storyHeader {
+    margin: 6px;
+    text-decoration: underline;
+    color: rgb(211, 214, 255);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 7px 10px 7px;
+}
+
+.shrinkPadding {
+    margin: 6px;
+    text-decoration: underline;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.width {
+    margin: -15px 20px 0px 20px;
+}
+
+.item {
+    padding: 0px 7px 0px 7px;
+}

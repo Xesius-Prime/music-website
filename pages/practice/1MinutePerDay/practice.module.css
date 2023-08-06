@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.alignLeft li {
+    text-align: left;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+
+.alignLeft p {
+    text-align: left;
+    margin-top: 0%;
+}

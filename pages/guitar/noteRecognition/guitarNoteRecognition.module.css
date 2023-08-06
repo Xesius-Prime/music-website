@@ -1,0 +1,61 @@
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.topPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 37%;
+}
+
+.topPart2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonFill {
+    height: 15.3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.bottomPart {
+    height: 650%;
+}
+
+.button {
+    border: solid black;
+    background-color: rgb(79, 40, 5);
+    border: solid rgb(185, 134, 62);
+    border-width: 1px;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+.button:hover {
+    background-color: rgb(140, 40, 0);
+}
+
+.red {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.green {
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 60px;
+}
