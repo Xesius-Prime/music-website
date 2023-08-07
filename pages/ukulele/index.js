@@ -20,7 +20,7 @@ export default function index() {
                 <ul>
                     <li>
                         <Link
-                            href="/ukulele/purchasing">
+                            href="/ukulele">
                             Purchasing a Ukulele
                         </Link>
                     </li>
@@ -41,14 +41,14 @@ export default function index() {
 
                     <li>
                         <Link
-                            href="/ukulele/fretRecognition">
+                            href="/ukulele">
                             Fret Recognition
                         </Link>
                     </li>
 
                     <li>
                         <Link
-                            href="/ukulele/noteRecognition">
+                            href="/ukulele">
                             Note Recognition
                         </Link>
                     </li>

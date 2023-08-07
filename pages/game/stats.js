@@ -37,11 +37,11 @@ export default function index() {
             <div className={styles.mainStats1}>
                 <h3 className={styles.mainStatsHeader}>Hero Stats</h3>
                 <div className={styles.mainStats2}>
-                    <p className={styles.item}>Hero HP: <br />          <b>1/5</b></p>
+                    <p className={styles.item}>Hero HP: <br />          <b>5/5</b></p>
                     <p className={styles.item}>Till1p Heal: <br />      <b>0/3</b></p>
                     <p className={styles.item}>Armour: <br />           <b>0/0</b></p>
-                    <p className={styles.item}>Endurance: <br />        <b>0/2</b></p>
-                    <p className={styles.item}>DMG Boost: <br />        <b>0/2</b></p>
+                    <p className={styles.item}>Endurance: <br />        <b>2/2</b></p>
+                    <p className={styles.item}>DMG Boost: <br />        <b>2/2</b></p>
                     <p className={styles.item}>Hunger: <br />           <b>3/3</b></p>
                 </div>
                 <div className={styles.mainStats2}>
@@ -64,9 +64,9 @@ export default function index() {
                 <div className={styles.pouch1}>
                     <h4 className={styles.shrinkPadding}>In Pouch:</h4>
                     <div className={styles.pouch2}>
-                        <p className={styles.item}>Gold:                <b>34</b></p>
+                        <p className={styles.item}>Gold:                <b>31</b></p>
                         <p className={styles.item}>Health Potion(s):    <b>0</b></p>
-                        <p className={styles.item}>Food:                <b>5</b><br />5pm Aug 6</p>
+                        <p className={styles.item}>Food:                <b>2</b><br />8pm Aug 6</p>
                         <p className={styles.item}>Wood:                <b>0</b></p>
                     </div>
                 </div>
