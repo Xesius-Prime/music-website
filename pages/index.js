@@ -11,7 +11,7 @@ export default function Home() {
         width={300}
         height={300}
         alt="Picture Test"
-        className={styles.image}
+        className={styles.image2}
         suppressHydrationWarning={true}
       />
     </div>

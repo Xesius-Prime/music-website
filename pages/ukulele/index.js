@@ -41,7 +41,7 @@ export default function index() {
 
                     <li>
                         <Link
-                            href="/ukulele">
+                            href="/ukulele/fretRecognition">
                             Fret Recognition
                         </Link>
                     </li>
