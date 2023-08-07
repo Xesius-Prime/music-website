@@ -105,8 +105,6 @@ export default function index() {
                 </div>
             </div> <br />
 
-
-
             <div className={styles.bottomPart}>
                 <div className={styles.buttonFill}>
                     <button onClick={() => handleNoteClick(A0)} className={styles.button}>open</button>
@@ -141,35 +139,35 @@ export default function index() {
                 </div>
 
                 <div className={styles.buttonFill}>
-                    <button onClick={() => handleNoteClick(G0)} className={styles.button}>open</button>
-                    <button onClick={() => handleNoteClick(G1)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G2)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G3)} className={styles.button}>O</button>
-                    <button onClick={() => handleNoteClick(G4)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G5)} className={styles.button}>O</button>
-                    <button onClick={() => handleNoteClick(G6)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G7)} className={styles.button}>O</button>
-                    <button onClick={() => handleNoteClick(G8)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G9)} className={styles.button}>O</button>
-                    <button onClick={() => handleNoteClick(G10)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G11)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(G12)} className={styles.button}>O <br /> O</button>
-                </div>
-
-                <div className={styles.buttonFill}>
                     <button onClick={() => handleNoteClick(C0)} className={styles.button}>open</button>
                     <button onClick={() => handleNoteClick(C1)} className={styles.button}></button>
                     <button onClick={() => handleNoteClick(C2)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(C3)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(C3)} className={styles.button}>O</button>
                     <button onClick={() => handleNoteClick(C4)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(C5)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(C5)} className={styles.button}>O</button>
                     <button onClick={() => handleNoteClick(C6)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(C7)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(C7)} className={styles.button}>O</button>
                     <button onClick={() => handleNoteClick(C8)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(C9)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(C9)} className={styles.button}>O</button>
                     <button onClick={() => handleNoteClick(C10)} className={styles.button}></button>
                     <button onClick={() => handleNoteClick(C11)} className={styles.button}></button>
-                    <button onClick={() => handleNoteClick(C12)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(C12)} className={styles.button}>O <br /> O</button>
+                </div>
+
+                <div className={styles.buttonFill}>
+                    <button onClick={() => handleNoteClick(G0)} className={styles.button}>open</button>
+                    <button onClick={() => handleNoteClick(G1)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G2)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G3)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G4)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G5)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G6)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G7)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G8)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G9)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G10)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G11)} className={styles.button}></button>
+                    <button onClick={() => handleNoteClick(G12)} className={styles.button}></button>
                 </div>
 
             </div>
