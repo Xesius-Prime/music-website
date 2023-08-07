@@ -1,12 +1,9 @@
 import React from 'react'
 import styles from './mainGame.module.css';
-import storyArray from './story.js';
 
 export default function index() {
 
-    const mappedStoryArray = storyArray.map(x =>
-        <p><b>{x.date}</b> {x.note}</p>
-    );
+
 
     return (
         <div className={styles.parentDiv}>
@@ -67,9 +64,9 @@ export default function index() {
                 <div className={styles.pouch1}>
                     <h4 className={styles.shrinkPadding}>In Pouch:</h4>
                     <div className={styles.pouch2}>
-                        <p className={styles.item}>Gold:                <b>14</b></p>
+                        <p className={styles.item}>Gold:                <b>34</b></p>
                         <p className={styles.item}>Health Potion(s):    <b>0</b></p>
-                        <p className={styles.item}>Food:                <b>7</b><br />5pm Aug 6</p>
+                        <p className={styles.item}>Food:                <b>5</b><br />5pm Aug 6</p>
                         <p className={styles.item}>Wood:                <b>0</b></p>
                     </div>
                 </div>
@@ -87,14 +84,7 @@ export default function index() {
                         <div>Emerald Amulet of Vitality <br /> <b>(Lysandra the Abyssal)</b></div>
                     </div>
                 </div>
-
-                <h4>JOURNAL:</h4>
-
-                <div className={styles.width}>
-                    {mappedStoryArray}
-                </div>
             </div>
-
         </div>
     )
 }

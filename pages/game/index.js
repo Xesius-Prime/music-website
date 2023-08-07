@@ -1,15 +1,10 @@
 import React from 'react'
 import styles from './mainGame.module.css';
 import Image from 'next/image';
-import storyArray from './story.js';
 import Link from "next/link";
 import Stats from "./stats.js";
 
 export default function index() {
-
-    const mappedStoryArray = storyArray.map(x =>
-        <p><b>{x.date}</b> {x.note}</p>
-    );
 
     return (
         <div className={styles.parentDiv}>
