@@ -1,81 +1,97 @@
-import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
-import styles from '../../guitar/chordRecognition/chordPatterns.module.css';
+import React from 'react'
 import Image from 'next/image';
-
-const stringsArray = [
-    '/Ukulele/String Recognition/G.png',
-    '/Ukulele/String Recognition/C.png',
-    '/Ukulele/String Recognition/E.png',
-    '/Ukulele/String Recognition/A.png'
-]
+import styles from '../holdingUkulele/holdingUkulele.module.css';
+import Link from "next/link";
 
 export default function index() {
-    const [randomStringPic, setRandomStringPic] = useState('/Ukulele/String Recognition/A.png');
-    const [message, setMessage] = useState('Lets play!');
-    const [tallyRight, setTallyRight] = useState(0);
-    const [tallyWrong, setTallyWrong] = useState(0);
-
-
-    const handleCheckAnswer = (selectedChord) => {
-
-        if (randomStringPic === selectedChord) {
-
-            setMessage('Correct!');
-            const randomNumber = Math.floor(Math.random() * stringsArray.length);
-            setRandomStringPic(stringsArray[randomNumber]);
-            setTallyRight(prev => prev + 1);
-
-        } else {
-            setMessage('Opps! Try again.')
-            setTallyWrong(prev => prev + 1);
-        }
-    }
-
-
     return (
-        <div className={globalStyles.center}>
-            <h1>String Recognition</h1>
+        <div>
+            <h1>Ukulele String Names</h1>
 
-            <Image
-                src={randomStringPic}
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            />
+            <div className={styles.sections}>
+                <h2>1.</h2>
 
-            <p className={styles.p}>{message}</p><br />
+                <p>In this position, <br /> the string CLOSEST to your HEAD <br /> is called the G string.</p>
 
+                <p>The RED line indicates the G string in the photo below.</p>
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[1])}>
-                    C
-                </button>
+                <Image
+                    src='/Ukulele/String Recognition/G string.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={styles.image}
+                    suppressHydrationWarning={true}
+                />
 
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[3])}>
-                    A
-                </button>
+                <p>Notice that there are 4 strings in total.</p>
+
+                <p>The GREEN lines indicate the other strings.</p>
             </div>
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[0])}>
-                    G
-                </button>
+            <div className={styles.sections}>
+                <h2>2.</h2>
 
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[2])}>
-                    E
-                </button>
+                <Image
+                    src='/Ukulele/String Recognition/C string.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={styles.image}
+                    suppressHydrationWarning={true}
+                />
+
+                <p>The C string is the next string.</p>
+                <p>It is one string down from the G string.</p>
             </div>
 
-            <div className={globalStyles.navbar}>
-                <h1 style={globalStyles.tallyRight}>Correct: {tallyRight}</h1>
-                <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
+            <div className={styles.sections}>
+                <h2>3.</h2>
+
+                <Image
+                    src='/Ukulele/String Recognition/E string.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={styles.image}
+                    suppressHydrationWarning={true}
+                />
+
+                <p>And now the E string, which is again one more down.</p>
             </div>
+
+
+            <div className={styles.sections}>
+                <h2>4.</h2>
+                <Image
+                    src='/Ukulele/String Recognition/A string.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={styles.image}
+                    suppressHydrationWarning={true}
+                />
+
+                <p>And finally the string closest to the floor is the A string</p>
+            </div>
+
+
+            <div className={styles.sections}>
+                <h2>5.</h2>
+
+                <p>This is what it looks like when you are looking down at your ukulele.</p>
+                <Image
+                    src='/Ukulele/String Recognition/A string.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={styles.image}
+                    suppressHydrationWarning={true}
+                />
+
+                <p>This is what </p>
+            </div>
+
 
         </div>
     )

@@ -16,12 +16,20 @@ export default function index() {
                 className={styles.image}
                 suppressHydrationWarning={true}
             />
+
             <div className={styles.leftAlign}>
                 <ul>
                     <li>
                         <Link
-                            href="/ukulele/purchasing">
+                            href="/ukulele">
                             Purchasing a Ukulele
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
+                            href="/ukulele/holdingUkulele">
+                            Holding the Ukulele
                         </Link>
                     </li>
 
