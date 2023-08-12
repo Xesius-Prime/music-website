@@ -1,94 +1,41 @@
-import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
-import styles from '../chordRecognition/chordPatterns.module.css';
+import styles from './stringRecognition.module.css';
 import Image from 'next/image';
-
-const stringsArray = [
-    '/Guitar/String Names/little e.png',
-    '/Guitar/String Names/B.png',
-    '/Guitar/String Names/G.png',
-    '/Guitar/String Names/D.png',
-    '/Guitar/String Names/A.png',
-    '/Guitar/String Names/big E.png',
-]
-
-export default function index() {
-    const [randomStringPic, setRandomStringPic] = useState('/Guitar/String Names/A.png');
-    const [message, setMessage] = useState('Lets play!');
-    const [tallyRight, setTallyRight] = useState(0);
-    const [tallyWrong, setTallyWrong] = useState(0);
+import Link from "next/link";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap'
 
 
-    const handleCheckAnswer = (selectedChord) => {
-
-        if (randomStringPic === selectedChord) {
-
-            setMessage('Correct!');
-            const randomNumber = Math.floor(Math.random() * stringsArray.length);
-            setRandomStringPic(stringsArray[randomNumber]);
-            setTallyRight(prev => prev + 1);
-
-        } else {
-            setMessage('Opps! Try again.')
-            setTallyWrong(prev => prev + 1);
-        }
-    }
-
+export default function pianoFingersPractice() {
 
     return (
-        <div className={globalStyles.center}>
-            <h1>String Recognition</h1>
+        <div className={styles.center}>
+            <h1>String Names Guitar</h1>
 
             <Image
-                src={randomStringPic}
+                src='/Guitar/String Names/All.png'
                 width={300}
                 height={300}
                 alt="Picture Test"
                 layout="intrinsic"
-            />
+            /> <br /> <br />
 
-            <p className={styles.p}>{message}</p><br />
+            <Container>
+                <div className="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/By93_ByoefE" title="YouTube video" allowFullScreen></iframe>
+                </div>
+            </Container>
+
+            <p>Click the button below to go to a game where you can practice your piano finger name recognition, and solidify what you've learnt!</p>
 
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[5])}>
-                    E
-                </button>
-
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[4])}>
-                    A
-                </button>
-            </div>
-
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[3])}>
-                    D
-                </button>
-
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[2])}>
-                    G
-                </button>
-
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[1])}>
-                    B
-                </button>
-
-                <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(stringsArray[0])}>
-                    e
-                </button>
-            </div>
-
-            <div className={globalStyles.navbar}>
-                <h1 style={globalStyles.tallyRight}>Correct: {tallyRight}</h1>
-                <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
-            </div>
+            <button>
+                <Link
+                    href="/guitar/stringRecognition/game">
+                    PRACTICE GAME
+                </Link>
+            </button>
 
         </div>
     )
 }
+

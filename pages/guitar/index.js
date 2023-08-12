@@ -27,6 +27,13 @@ export default function index() {
 
                     <li>
                         <Link
+                            href="/guitar/holding">
+                            Holding a Guitar
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
                             href="/guitar/stringRecognition">
                             String Recognition
                         </Link>

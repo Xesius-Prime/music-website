@@ -1,0 +1,14 @@
+.image {
+    object-fit: contain;
+    width: 250px;
+    height: 100%;
+}
+
+.sections {
+    border-bottom: solid goldenrod;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}

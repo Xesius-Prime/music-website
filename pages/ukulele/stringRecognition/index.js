@@ -88,8 +88,6 @@ export default function index() {
                     className={styles.image}
                     suppressHydrationWarning={true}
                 />
-
-                <p>This is what </p>
             </div>
 
 

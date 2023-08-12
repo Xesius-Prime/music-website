@@ -1,0 +1,11 @@
+.center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.center p {
+    width: 400px;
+}
