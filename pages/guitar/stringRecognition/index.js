@@ -9,9 +9,10 @@ export default function pianoFingersPractice() {
 
     return (
         <div className={styles.center}>
-            <h1>String Names Guitar</h1>
+            <h1>String Names Guitar</h1> <br />
 
-            <p>Looking down at your guitar with it tilted back on your lap,</p>
+            <p>Looking down at your guitar with it tilted back on your lap, <br />
+                and the strings facing up at you,</p>
 
             <Image
                 src='/Guitar/String Names/All.png'
@@ -21,8 +22,10 @@ export default function pianoFingersPractice() {
                 layout="intrinsic"
             /> <br /> <br />
 
-            <p> the BIGGEST string (blue) is called the <b>BIG E string.</b><br />
-                The smallest string (pink) is called the <b>little e string.</b></p>
+            <p> the BIGGEST string (blue) is called the <b>BIG E string,</b><br />
+                and should be the one closest to your body. <br /> <br />
+                The smallest string (pink) is called the <b>little e string.</b> <br />
+                and should be the one furthest from your body.</p>
 
             <div className={styles.width}>
                 <p>Start from the BIG E (blue), <br /> and play each individual string one after the other, <br /> until you reach the little e (pink), <br /> <br />It goes: <br /><b>E (blue), A (red), D (green), G (orange), B (yellow), e (pink)</b></p> <br />
@@ -34,13 +37,9 @@ export default function pianoFingersPractice() {
 
             <div className={styles.width}>
 
-                <Container>
-                    <div className="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/By93_ByoefE" title="YouTube video" allowFullScreen className={styles.width}></iframe>
-                    </div>
-                </Container>
 
-                <p>Click the button below to go to a game where you can practice your piano finger name recognition, and solidify what you've learnt!</p>
+
+                <p>Click the button below to go to a game where you can practice, and solidify what you've learnt!</p>
             </div> <br />
 
 
