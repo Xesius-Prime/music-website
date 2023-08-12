@@ -46,7 +46,6 @@ export default function index() {
             setTallyRight(prev => prev + 1);
 
         } else {
-
             setTallyWrong(prev => prev + 1);
         }
     };

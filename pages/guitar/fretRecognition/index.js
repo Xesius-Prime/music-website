@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import styles from '../noteRecognition/guitarNoteRecognition.module.css'
 import Image from 'next/image';
+import Image2 from 'next/image';
 
 import e0 from '../../../public/Guitar/Fret Recognition/e0.png';
 import e1 from '../../../public/Guitar/Fret Recognition/e1.png';
@@ -118,10 +119,20 @@ export default function index() {
 
     return (
         <div className={styles.main}> <br />
+            <h1>Note Recognition for Guitar</h1>
+
+            <div>
+                <Image2
+                    src='/Guitar/Guitar Tabs Perspective.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test2"
+                    className={globalStyles.image}
+                    suppressHydrationWarning={true}
+                />
+            </div> <br />
 
             <div className={styles.topPart1}>
-                <h1>Note Recognition for Guitar</h1>
-
                 <div className={styles.topPart2}>
                     <h1 className={styles.green}>{tallyRight}</h1>
                     <Image
