@@ -81,14 +81,14 @@ export default function index() {
 
                 <p>This is what it looks like when you are looking down at your ukulele.</p>
                 <Image
-                    src='/Ukulele/String Recognition/A string.png'
+                    src='/Ukulele/String Recognition/G.png'
                     width={300}
                     height={300}
                     alt="Picture Test"
                     className={styles.image}
                     suppressHydrationWarning={true}
-                />
-            </div>
+                /> <br /> <br />
+            </div><br /> <br />
 
 
         </div>

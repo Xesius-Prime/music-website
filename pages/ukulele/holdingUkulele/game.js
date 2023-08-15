@@ -2,22 +2,22 @@ import styles from '../../../styles/Home.module.css';
 import React, { useState } from 'react'
 import Image from 'next/image';
 
-const clefPicArray = [
+const holdingUkulelePicArray = [
     '/Ukulele/Holding the Ukulele/left hand ukulele.png',
     '/Ukulele/Holding the Ukulele/right hand ukulele.png'
 ]
 
 export default function index() {
-    const [randomClefPic, setRandomClefPic] = useState('/Ukulele/Holding the Ukulele/left hand ukulele.png');
+    const [randomHoldingUkulelePic, setRandomHoldingUkulelePic] = useState('/Ukulele/Holding the Ukulele/left hand ukulele.png');
     const [tallyRight, setTallyRight] = useState(0);
     const [tallyWrong, setTallyWrong] = useState(0);
     const [message, setMessage] = useState('Lets play!');
 
-    const handleCheckAnswer = (selectedClef) => {
+    const handleCheckAnswer = (selectedAnswer) => {
 
-        if (randomClefPic === selectedClef) {
+        if (randomHoldingUkulelePic === selectedAnswer) {
             const randomNumber = Math.floor(Math.random() * 2);
-            setRandomClefPic(clefPicArray[randomNumber]);
+            setRandomHoldingUkulelePic(holdingUkulelePicArray[randomNumber]);
             setTallyRight(prev => prev + 1);
             setMessage('Correct!')
 
@@ -33,7 +33,7 @@ export default function index() {
             <h1>Piano Clef Recognition</h1>
 
             <Image
-                src={randomClefPic}
+                src={randomHoldingUkulelePic}
                 width={300}
                 height={300}
                 alt="Picture Test"
@@ -44,9 +44,9 @@ export default function index() {
 
             <div className={styles.buttonContainer}>
                 <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(clefPicArray[0])}>Yes</button>
+                    onClick={() => handleCheckAnswer(holdingUkulelePicArray[0])}>Yes</button>
                 <button className={styles.buttons}
-                    onClick={() => handleCheckAnswer(clefPicArray[1])}>No</button>
+                    onClick={() => handleCheckAnswer(holdingUkulelePicArray[1])}>No</button>
             </div>
 
             <div className={styles.navbar}>
