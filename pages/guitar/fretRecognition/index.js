@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import styles from '../noteRecognition/guitarNoteRecognition.module.css'
 import Image from 'next/image';
-import Image2 from 'next/image';
 
 import e0 from '../../../public/Guitar/Fret Recognition/e0.png';
 import e1 from '../../../public/Guitar/Fret Recognition/e1.png';
@@ -122,7 +121,7 @@ export default function index() {
             <h1>Note Recognition for Guitar</h1>
 
             <div>
-                <Image2
+                <Image
                     src='/Guitar/Guitar Tabs Perspective.png'
                     width={300}
                     height={300}
