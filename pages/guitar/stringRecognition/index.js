@@ -2,6 +2,7 @@ import styles from './stringRecognition.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import globalStyle from '../../../styles/Home.module.css';
 import { Container } from 'react-bootstrap'
 
 
@@ -11,7 +12,7 @@ export default function pianoFingersPractice() {
         <div className={styles.center}>
             <h1>String Names Guitar</h1> <br />
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/D-GJFnyrSrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={global.video}></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D-GJFnyrSrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe>
 
             <p>_______________________________________</p>
 
