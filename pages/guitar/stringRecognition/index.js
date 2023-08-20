@@ -6,7 +6,7 @@ import globalStyle from '../../../styles/Home.module.css';
 import { Container } from 'react-bootstrap'
 
 
-export default function pianoFingersPractice() {
+export default function index() {
 
     return (
         <div className={styles.center}>
