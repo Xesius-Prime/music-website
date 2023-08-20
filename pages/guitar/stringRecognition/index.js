@@ -11,6 +11,10 @@ export default function pianoFingersPractice() {
         <div className={styles.center}>
             <h1>String Names Guitar</h1> <br />
 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D-GJFnyrSrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={global.video}></iframe>
+
+            <p>_______________________________________</p>
+
             <p>Looking down at your guitar with it tilted back on your lap, <br />
                 and the strings facing up at you,</p>
 
