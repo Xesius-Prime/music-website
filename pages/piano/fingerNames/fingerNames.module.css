@@ -5,7 +5,21 @@
     flex-direction: column;
 }
 
+.image {
+    object-fit: contain;
+    width: 400px;
+    height: 100%;
+}
+
+.vid {
+    position: relative;
+    width: 400px;
+}
 
 .center p {
+    width: 400px;
+}
+
+.center li {
     width: 400px;
 }

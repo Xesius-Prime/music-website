@@ -29,6 +29,12 @@ export default function index() {
                         Clef Recognition
                     </Link>
                 </li>
+
+                <li>
+                    <Link href="/piano/keyRecognition">
+                        Key Recognition
+                    </Link>
+                </li>
             </ul>
         </div>
     )
