@@ -7,7 +7,7 @@
 .buttons {
     height: 70px;
     width: 120px;
-    background-color: lightcoral;
+    background-color: rgb(96, 0, 0);
     border-radius: 20px;
     font-size: large;
 }
