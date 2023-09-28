@@ -55,6 +55,13 @@ export default function index() {
 
                     <li>
                         <Link
+                            href="/guitar/findNoteOnString">
+                            Find Note on String
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
                             href="/guitar/noteRecognition">
                             Note Recognition
                         </Link>
