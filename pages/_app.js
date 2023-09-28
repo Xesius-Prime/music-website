@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className={styles.center}>
+    <div className={styles.center}> <br />
       <NavBar />
       <Component {...pageProps} />
     </div>

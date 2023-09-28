@@ -35,7 +35,7 @@ export default function index() {
             <div className={styles.width}>
                 <p>Start from the BIG E (blue), <br /> and play each individual string one after the other, <br /> until you reach the little e (pink), <br /> <br />It goes: <br /><b>E (blue), A (red), D (green), G (orange), B (yellow), e (pink)</b></p> <br />
 
-                <p>Play it again, and as you do say: <br /><b>Eddy, Ate, Dynamite... Good, Bye, Eddy</b> <br /><b>E, A, D... G, B, e</b></p> <br />
+                <p>Play it again, and as you do say: <br /><b>Eddy, Ate, Dynamite... Good, Bye, eddy</b> <br /><b>E, A, D... G, B, e</b></p> <br />
             </div>
 
 
