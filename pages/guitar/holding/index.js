@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function index() {
     return (
         <div>
-            <h1>Holding the Ukulele</h1>
+            <h1>Holding the Guitar</h1>
 
             <div className={styles.sections}>
                 <h2>1.</h2>

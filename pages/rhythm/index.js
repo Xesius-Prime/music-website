@@ -14,10 +14,25 @@ export default function index() {
 
                 <li>
                     <Link
+                        href="/rhythm/quarterNotes">
+                        Quarter Notes
+                    </Link>
+                </li>
+
+                <li>
+                    <Link
+                        href="/rhythm/eighthNotes">
+                        Eighth Notes
+                    </Link>
+                </li>
+
+                <li>
+                    <Link
                         href="https://www.therhythmtrainer.com/">
                         Rhythm Trainer Game
                     </Link>
                 </li>
+
             </ul>
         </div>
     )

@@ -73,8 +73,17 @@ export default function index() {
                             Chord Recognition
                         </Link>
                     </li>
+
+                    <li>
+                        <Link
+                            href="/guitar/chordRecognition">
+                            Identify I, IV, V
+                        </Link>
+                    </li>
                 </ul>
             </div>
+
+
         </div>
     )
 }

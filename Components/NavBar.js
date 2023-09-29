@@ -12,6 +12,12 @@ export default function NavBar() {
                 </Link>
 
                 <Link
+                    href="/practice"
+                    className={styles.navbarInstance}>
+                    Practice
+                </Link>
+
+                <Link
                     href="/piano"
                     className={styles.navbarInstance}>
                     Piano
@@ -30,10 +36,17 @@ export default function NavBar() {
                 </Link>
 
                 <Link
-                    href="/practice"
+                    href="/rhythm"
                     className={styles.navbarInstance}>
-                    Practice
+                    Rhythm
                 </Link>
+
+                <Link
+                    href="/theory"
+                    className={styles.navbarInstance}>
+                    Theory
+                </Link>
+
             </ul>
         </div>
     )
