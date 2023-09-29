@@ -62,11 +62,7 @@ export default function index() {
         }
     }
 
-    useEffect(() => {
-        console.log(question);
-        console.log(answer);
 
-    }, []);
 
     return (
         <div className={globalStyles.center}>
