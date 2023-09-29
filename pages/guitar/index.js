@@ -49,7 +49,7 @@ export default function index() {
                     <li>
                         <Link
                             href="/guitar/fretRecognition">
-                            Frets
+                            Tabs & Fretboard
                         </Link>
                     </li>
 

@@ -7,7 +7,7 @@ export default function index() {
 
     return (
         <div>
-            <h1>Finger Names</h1> <br />
+            <h1>Finger Names - Lesson</h1> <br />
 
             <Image
                 src='/Guitar/Finger Names/guitar finger names.png'
@@ -19,8 +19,8 @@ export default function index() {
 
 
             <div className={globalStyle.flex}>
-                <button><Link href="/guitar/stringRecognition/game">Back to: String Name Game</Link></button>
-                <button><Link href="/guitar/fingerRecognition/game">Continue to: Finger Recognition Game</Link></button>
+                <button><Link href="/guitar/stringRecognition/game">Back to: <br /> String Name Game</Link></button>
+                <button><Link href="/guitar/fingerRecognition/game">Continue to: <br /> Finger Recognition Game</Link></button>
             </div> <br /> <br /> <br />
         </div>
     )
