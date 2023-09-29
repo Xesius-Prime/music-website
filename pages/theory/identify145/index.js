@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import styles from '../../guitar/chordRecognition/chordPatterns.module.css';
 
