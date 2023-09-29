@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import styles from '../chordRecognition/chordPatterns.module.css';
 import Image from 'next/image';
+import Link from "next/link";
 
 const stringsArray = [
     '/Guitar/String Names/little e.png',
@@ -89,6 +90,10 @@ export default function index() {
                 <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
             </div>
 
+            <div className={globalStyles.flex}>
+                <button><Link href="/guitar/stringRecognition">Back to String Name Lesson</Link></button>
+                <button><Link href="/guitar/fingerRecognition">Continue to: Finger Names</Link></button>
+            </div> <br /> <br /> <br />
         </div>
     )
 }

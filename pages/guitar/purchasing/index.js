@@ -1,6 +1,7 @@
 import React from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function index() {
     return (
@@ -27,7 +28,12 @@ export default function index() {
 
             <h2>What Type?</h2>
             <img className={globalStyles.image} src="https://cdn.long-mcquade.com/files/49481/lg_278597b7a4a306c6465327a7228b570a.jpg" alt="" />
-            <p>Do you want an acoustic or electric? If you want an acoustic, do you want steel string or nylon string? <br /> I recommend beginners <b>get the nylon string acoustic guitar</b>.</p>
+            <p>Do you want an acoustic or electric? If you want an acoustic, do you want steel string or nylon string? <br /> I recommend beginners <b>get the nylon string acoustic guitar</b>.</p> <br /> <br />
+
+            <div className={globalStyles.flex}>
+                <button><Link href="/guitar">Back to Guitar Overview</Link></button>
+                <button><Link href="/guitar/holding">Continue to Holding the Guitar</Link></button>
+            </div> <br /> <br /> <br />
         </div>
     )
 }

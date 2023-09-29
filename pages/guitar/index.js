@@ -35,21 +35,21 @@ export default function index() {
                     <li>
                         <Link
                             href="/guitar/stringRecognition">
-                            String Recognition
+                            String Names
                         </Link>
                     </li>
 
                     <li>
                         <Link
                             href="/guitar/fingerRecognition">
-                            Finger Recognition
+                            Finger Names
                         </Link>
                     </li>
 
                     <li>
                         <Link
                             href="/guitar/fretRecognition">
-                            Fret Recognition
+                            Frets
                         </Link>
                     </li>
 

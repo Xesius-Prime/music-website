@@ -1,9 +1,7 @@
 import styles from './stringRecognition.module.css';
 import Image from 'next/image';
 import Link from "next/link";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import globalStyle from '../../../styles/Home.module.css';
-import { Container } from 'react-bootstrap'
 
 
 export default function index() {
@@ -34,13 +32,10 @@ export default function index() {
             </div>
 
 
-            <button>
-                <Link
-                    href="/guitar/stringRecognition/game">
-                    PRACTICE GAME
-                </Link>
-            </button> <br /> <br /> <br />
-
+            <div className={globalStyle.flex}>
+                <button><Link href="/guitar/holding">Back to Holding a Guitar</Link></button>
+                <button><Link href="/guitar/stringRecognition/game">Continue to Practice Game</Link></button>
+            </div> <br /> <br /> <br />
         </div>
     )
 }

@@ -45,7 +45,7 @@ export default function index() {
             <div className={styles.flex}>
 
 
-                <button><Link href="/guitar">Back to Guitar Overview</Link></button>
+                <button><Link href="/guitar/purchasing">Back to Purchasing Guitar</Link></button>
                 <button><Link href="/guitar/stringRecognition">Continue to String Names</Link></button>
             </div> <br /> <br />
         </div>
