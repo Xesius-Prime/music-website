@@ -15,7 +15,8 @@
   background-color: rgb(127, 0, 0);
   border-radius: 5px;
   font-size: larger;
-  padding: 3px;
+  padding: 9px;
+  margin: 7px;
 }
 
 .buttonContainer {
@@ -59,4 +60,5 @@
 .flex {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
