@@ -18,21 +18,9 @@ export default function NavBar() {
                 </Link>
 
                 <Link
-                    href="/piano"
+                    href="/instruments"
                     className={styles.navbarInstance}>
-                    Piano
-                </Link>
-
-                <Link
-                    href="/guitar"
-                    className={styles.navbarInstance}>
-                    Guitar
-                </Link>
-
-                <Link
-                    href="/ukulele"
-                    className={styles.navbarInstance}>
-                    Ukulele
+                    Instruments
                 </Link>
 
                 <Link

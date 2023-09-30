@@ -1,0 +1,20 @@
+.h1 {
+    margin-bottom: 20px;
+    padding-bottom: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 172, 172);
+}
+
+.h2 {
+    margin-bottom: 20px;
+    padding-bottom: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(190, 238, 255);
+}
+
+.image {
+    height: 300px;
+    width: 225px;
+    padding-top: 0%;
+    margin-top: 0%;
+}

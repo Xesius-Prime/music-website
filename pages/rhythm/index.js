@@ -28,12 +28,13 @@ export default function index() {
 
                 <li>
                     <Link
-                        href="https://www.therhythmtrainer.com/">
-                        Rhythm Trainer Game
+                        href="/rhythm/rhythmTrainer">
+                        Rhythm Trainer
                     </Link>
                 </li>
-
             </ul>
+
+            <p></p>
         </div>
     )
 }

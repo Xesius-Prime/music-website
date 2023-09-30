@@ -28,7 +28,7 @@ export default function index() {
 
                     <li>
                         <Link
-                            href="/ukulele/holdingUkulele/game">
+                            href="/ukulele/holdingUkulele">
                             Holding the Ukulele
                         </Link>
                     </li>

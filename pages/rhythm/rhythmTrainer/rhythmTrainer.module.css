@@ -1,0 +1,9 @@
+.button {
+    background-color: rgb(255, 246, 184);
+    border-radius: 20%;
+    border: none;
+}
+
+.bold {
+    color: rgb(48, 0, 0);
+}

@@ -30,7 +30,7 @@ export default function index() {
 
     return (
         <div className={styles.center}>
-            <h1>Piano Clef Recognition</h1>
+            <h1>Holding the Ukulele Game</h1>
 
             <Image
                 src={randomHoldingUkulelePic}

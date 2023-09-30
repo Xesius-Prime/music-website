@@ -41,8 +41,8 @@ export default function index() {
             <p>Do you want an acoustic or electric? If you want an acoustic, do you want steel string or nylon string? <br /> I recommend beginners <b>get the nylon string acoustic guitar</b>.</p> <br /> <br />
 
             <div className={globalStyles.flex}>
-                <button><Link href="/guitar">Back to: Guitar Overview</Link></button>
-                <button><Link href="/guitar/holding">Continue to: Holding the Guitar</Link></button>
+                <button><Link href="/guitar">Back to: <br /> Guitar Overview</Link></button>
+                <button><Link href="/guitar/holding">Continue to: <br /> Holding the Guitar</Link></button>
             </div> <br /> <br /> <br />
         </div>
     )
