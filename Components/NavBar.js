@@ -6,10 +6,6 @@ export default function NavBar() {
     return (
         <div>
             <ul className={styles.navbar}>
-                <Link
-                    href="/"
-                    className={styles.navbarInstance}>Home
-                </Link>
 
                 <Link
                     href="/practice"
