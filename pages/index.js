@@ -16,7 +16,7 @@ export default function Home() {
         suppressHydrationWarning={true}
       />
 
-      <p>This website is a music method, compiled by William Devonshire to help teach music ideas.</p>
+      <p>This website is a music method, <br /> compiled by: William Devonshire, to help teach music ideas.</p>
 
     </div>
   )
