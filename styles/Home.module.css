@@ -9,14 +9,16 @@
   justify-content: space-around;
   flex-wrap: wrap;
   font-size: medium;
+  padding-left: 0px;
 }
 
 .navbarInstance {
   background-color: rgb(127, 0, 0);
   border-radius: 5px;
   font-size: larger;
-  padding: 9px;
-  margin: 7px;
+  padding: 4px;
+  margin-top: 4px;
+
 }
 
 .buttonContainer {
