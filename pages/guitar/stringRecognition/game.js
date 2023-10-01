@@ -41,7 +41,7 @@ export default function index() {
             <h1>String Name Game</h1>
 
             <div className={globalStyles.navbar}>
-                <h1 className={globalStyles.tallyRight}>V {tallyRight}</h1>
+                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
 
                 <Image
                     src={randomStringPic}
@@ -51,7 +51,7 @@ export default function index() {
                     layout="intrinsic"
                 />
 
-                <h1 className={globalStyles.tallyWrong}>X {tallyWrong}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
             </div>
 
 

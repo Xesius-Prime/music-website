@@ -73,12 +73,12 @@
   justify-content: space-around;
 }
 
-.tallyRight {
+.tallyCorrect {
   color: greenyellow;
   font-size: 50px;
 }
 
-.tallyWrong {
+.tallyIncorrect {
   color: red;
   font-size: 50px;
 }
