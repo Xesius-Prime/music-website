@@ -40,13 +40,20 @@ export default function index() {
         <div className={globalStyles.center}>
             <h1>String Name Game</h1>
 
-            <Image
-                src={randomStringPic}
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            />
+            <div className={globalStyles.navbar}>
+                <h1 className={globalStyles.tallyRight}>V {tallyRight}</h1>
+
+                <Image
+                    src={randomStringPic}
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    layout="intrinsic"
+                />
+
+                <h1 className={globalStyles.tallyWrong}>X {tallyWrong}</h1>
+            </div>
+
 
             <p className={styles.p}>{message}</p><br />
 
@@ -83,12 +90,9 @@ export default function index() {
                     onClick={() => handleCheckAnswer(stringsArray[0])}>
                     e
                 </button>
-            </div>
+            </div> <br /> <br /> <br />
 
-            <div className={globalStyles.navbar}>
-                <h1 style={globalStyles.tallyRight}>Correct: {tallyRight}</h1>
-                <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
-            </div>
+
 
             <div className={globalStyles.flex}>
                 <button><Link href="/guitar/stringRecognition">Back to: <br /> String Name Lesson</Link></button>
