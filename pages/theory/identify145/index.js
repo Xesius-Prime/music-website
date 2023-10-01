@@ -72,14 +72,14 @@ export default function index() {
 
             <div className={globalStyles.flexNoWrap}>
 
-                <h1 className={globalStyles.tallyRight}>V {tallyRight}</h1>
+                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
 
                 <div>
                     <h2>{question}</h2>
                     <h3>Based on the chords shown above, what key are we in?</h3>
                 </div>
 
-                <h1 className={globalStyles.tallyWrong}>X {tallyWrong}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
 
             </div> <br /> <br />
 

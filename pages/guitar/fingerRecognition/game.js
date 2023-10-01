@@ -46,7 +46,7 @@ export default function index() {
             <h1>Finger Name Game <br />for Guitar</h1>
 
             <div className={globalStyles.navbar}>
-                <h1 className={globalStyles.tallyRight}>V {tallyRight}</h1>
+                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
                 <Image
                     src={randomFingerPic}
                     width={300}
@@ -55,7 +55,7 @@ export default function index() {
                     className={globalStyles.image}
                     suppressHydrationWarning={true}
                 />
-                <h1 className={globalStyles.tallyWrong}>X {tallyWrong}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
             </div><br /> <br />
 
             <p className={styles.p}>{message}</p><br />
