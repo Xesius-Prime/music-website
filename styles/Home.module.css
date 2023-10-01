@@ -72,3 +72,13 @@
   display: flex;
   justify-content: space-around;
 }
+
+.tallyRight {
+  color: greenyellow;
+  font-size: 50px;
+}
+
+.tallyWrong {
+  color: red;
+  font-size: 50px;
+}

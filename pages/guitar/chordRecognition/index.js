@@ -36,16 +36,20 @@ export default function majorChordOrMinorForGuitar() {
 
 
     return (
-        <div className={globalStyles.center}>
-            <h1>Guitar Chord Pattern Recognition</h1>
+        <div className={globalStyles.center}> <br />
+            <h1>Guitar Chord Pattern Recognition</h1> <br /> <br />
 
-            <Image
-                src={randomChordPic}
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            />
+            <div className={globalStyles.navbar}>
+                <h1 className={globalStyles.tallyRight}>V {tallyRight}</h1>
+                <Image
+                    src={randomChordPic}
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    layout="intrinsic"
+                />
+                <h1 className={globalStyles.tallyWrong}>X {tallyWrong}</h1>
+            </div> <br />
 
             <p className={styles.p}>{message}</p><br />
 
@@ -72,11 +76,6 @@ export default function majorChordOrMinorForGuitar() {
                     onClick={() => handleCheckAnswer(chordsArray[3])}>
                     Minor Chord, Root on E String
                 </button>
-            </div>
-
-            <div className={globalStyles.navbar}>
-                <h1 style={globalStyles.tallyRight}>Correct: {tallyRight}</h1>
-                <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
             </div>
 
         </div>
