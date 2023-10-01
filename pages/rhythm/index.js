@@ -8,7 +8,7 @@ export default function index() {
         <div>
             <h1>Rhythm</h1>
 
-            <img src='https://ecdn.teacherspayteachers.com/thumbitem/Rhythm-Tree-Notes-Rests-5533610-1588546390/original-5533610-1.jpg' alt="Description of the image" />
+            <img src='https://www.soundpiper.com/elements/image102.gif' alt="Description of the image" />
 
             <ul className={styles.leftAlign}>
 

@@ -86,10 +86,10 @@ export default function index() {
 
 
     return (
-        <div className={styles.main}> <br />
+        <div className={styles.main}>
 
             <div className={styles.topPart1}>
-                <h1>Note Recognition for Guitar</h1>
+                <h1>Fret Recognition <br /> for Ukulele</h1> <br />
 
                 <div className={styles.topPart2}>
                     <h1 className={styles.green}>{tallyRight}</h1>
@@ -103,7 +103,7 @@ export default function index() {
                     />
                     <h1 className={styles.red}>{tallyWrong}</h1>
                 </div>
-            </div> <br />
+            </div> <br /> <br />
 
             <div className={styles.bottomPart}>
                 <div className={styles.buttonFill}>

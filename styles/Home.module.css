@@ -82,3 +82,18 @@
   color: red;
   font-size: 50px;
 }
+
+.divWidth {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.underlineBold {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(171, 171, 255);
+}
+
+.blueSolution {
+  color: rgb(171, 171, 255);
+}
