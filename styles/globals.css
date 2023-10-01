@@ -48,3 +48,8 @@ b {
   color: rgb(255, 152, 152);
 
 }
+
+ul {
+  font-size: x-large;
+  padding: 3px;
+}

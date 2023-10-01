@@ -1,11 +1,59 @@
 import React from 'react'
-import styles from '../../styles/Home.module.css';
+import globalStyle from '../../styles/Home.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 
 export default function index() {
+
+    const guitarMethodArray = [
+        {
+            name: "Purchasing a Guitar",
+            href: "/guitar/purchasing"
+        },
+        {
+            name: "Holding a Guitar",
+            href: "/guitar/holding"
+        },
+        {
+            name: "String Names",
+            href: "/guitar/stringRecognition"
+        },
+        {
+            name: "Finger Names",
+            href: "/guitar/fingerRecognition"
+        },
+        {
+            name: "Tabs & Fretboard",
+            href: "/guitar/fretRecognition"
+        },
+        {
+            name: "Find Note on String",
+            href: "/guitar/findNoteOnString"
+        },
+        {
+            name: "Note Recognition",
+            href: "/guitar/noteRecognition"
+        },
+        {
+            name: "Chord Recognition",
+            href: "/guitar/chordRecognition"
+        },
+    ]
+
+    const methodMapped = guitarMethodArray.map((x, i) =>
+        <div>
+            <div className={globalStyle.journey}>
+                <Link
+                    href={x.href}>
+                    {i + 1} {x.name}
+                </Link>
+            </div>
+        </div>
+    );
+
+
     return (
-        <div className={styles.center}>
+        <div className={globalStyle.center}>
             <h1>Guitar</h1>
 
             <Image
@@ -13,66 +61,12 @@ export default function index() {
                 width={300}
                 height={300}
                 alt="Picture Test"
-                className={styles.image}
+                className={globalStyle.image}
                 suppressHydrationWarning={true}
             />
-            <div className={styles.leftAlign}>
-                <ul>
-                    <li>
-                        <Link
-                            href="/guitar/purchasing">
-                            Purchasing a Guitar
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/holding">
-                            Holding a Guitar
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/stringRecognition">
-                            String Names
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/fingerRecognition">
-                            Finger Names
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/fretRecognition">
-                            Tabs & Fretboard
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/findNoteOnString">
-                            Find Note on String
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/noteRecognition">
-                            Note Recognition
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link
-                            href="/guitar/chordRecognition">
-                            Chord Recognition
-                        </Link>
-                    </li>
+            <div className={globalStyle.leftAlign}>
+                <ul className={globalStyle.flexColumn}>
+                    {methodMapped}
                 </ul>
             </div>
 

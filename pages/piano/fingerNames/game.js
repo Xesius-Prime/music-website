@@ -1,6 +1,7 @@
-import styles from '../../../styles/Home.module.css';
+import globalStyle from '../../../styles/Home.module.css';
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from "next/link";
 
 const fingerPicArray = [
     '/Piano/Finger Pics/LH 1.png',
@@ -39,49 +40,59 @@ export default function pianoFingersPractice() {
 
 
     return (
-        <div className={styles.center}>
+        <div className={globalStyle.center}>
             <h1>Piano Finger Recognition Practice</h1>
 
-            <Image
-                src={randomFingerPic}
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            />
 
-            <p className={styles.p}>{message}</p><br />
+            <div className={globalStyle.navbar}>
+                <h1 className={globalStyle.tallyCorrect}>V {tallyRight}</h1>
+                <Image
+                    src={randomFingerPic}
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    layout="intrinsic"
+                />
+                <h1 className={globalStyle.tallyIncorrect}>X {tallyWrong}</h1>
+            </div>
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
+            <p className={globalStyle.p}>{message}</p><br />
+
+            <div className={globalStyle.buttonContainer}>
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[0])}>LH Finger 1</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[1])}>LH Finger 2</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[2])}>LH Finger 3</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[3])}>LH Finger 4</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[4])}>LH Finger 5</button>
             </div>
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
+            <div className={globalStyle.buttonContainer}>
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[5])}>RH Finger 1</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[6])}>RH Finger 2</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[7])}>RH Finger 3</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[8])}>RH Finger 4</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(fingerPicArray[9])}>RH Finger 5</button>
-            </div>
+            </div><br /><br /><br />
 
-            <div className={styles.navbar}>
-                <h1>Correct: {tallyRight}</h1>
-                <h1>Incorrect {tallyWrong}</h1>
-            </div>
+            <div className={globalStyle.flex}>
+                <button>
+                    <Link href="/piano/fingerNames">Back to: <br />Finger Name Lesson</Link>
+                </button>
+
+                <button>
+                    <Link href="/piano/clefRecognition">Continue to: <br />Clef Recognition</Link>
+                </button>
+            </div> <br /> <br /> <br />
         </div>
     )
 }

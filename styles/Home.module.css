@@ -68,6 +68,13 @@
   flex-wrap: wrap;
 }
 
+.flexColumn {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .flexNoWrap {
   display: flex;
   justify-content: space-around;
@@ -96,4 +103,16 @@
 
 .blueSolution {
   color: rgb(171, 171, 255);
+}
+
+.blue {
+  color: rgb(171, 171, 255);
+}
+
+.color2 {
+  color: rgb(182, 255, 255);
+}
+
+.color3 {
+  color: rgb(254, 236, 186);
 }

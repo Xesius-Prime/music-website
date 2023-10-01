@@ -9,7 +9,7 @@ export default function pianoFingersPractice() {
     return (
         <div>
             <div className={styles.center}>
-                <h1>Finger Names & Game <br /> for Piano</h1>
+                <h1>Finger Names & Game <br /> for Piano</h1><br />
 
                 <Image
                     src='/Piano/Finger Pics/piano finger names.png'
@@ -17,29 +17,19 @@ export default function pianoFingersPractice() {
                     height={300}
                     alt="Picture Test"
                     layout="intrinsic"
-                />
+                /> <br /> <br />
 
-                <p>Click the button below to go to a game where you can practice your piano finger name recognition, and solidify what you've learnt!</p>
-
-
-                <button>
-                    <Link
-                        href="/piano/fingerNames/game">
-                        PRACTICE GAME
-                    </Link>
-                </button>
-                <br /> <br /> <br />
-            </div>
+                <p>Thumbs are always 1.</p>
+            </div><br /><br /><br />
 
             <div className={globalStyle.flex}>
                 <button>
-                    <Link href="/guitar/fretRecognition/game">Back to: <br /> Fret Recognition Game</Link>
+                    <Link href="/piano">Back to: <br />Piano Overview</Link>
                 </button>
 
                 <button>
-                    <Link href="/guitar/findNoteOnString/game">Continue to: <br /> Find Note on String Game</Link>
+                    <Link href="/piano/fingerNames/game">Continue to: <br /> Finger Name Game</Link>
                 </button>
-
             </div> <br /> <br /> <br />
         </div>
     )

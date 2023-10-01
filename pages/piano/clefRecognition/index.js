@@ -1,6 +1,7 @@
-import styles from '../../../styles/Home.module.css';
+import globalStyle from '../../../styles/Home.module.css';
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from "next/link";
 
 const clefPicArray = [
     '/Piano/Clef Pics/trebleclef.jpg',
@@ -30,32 +31,44 @@ export default function index() {
 
 
     return (
-        <div className={styles.center}>
-            <h1>Piano Clef Recognition</h1>
+        <div className={globalStyle.center}>
+            <h1>Piano Clef Recognition</h1><br />
 
-            <Image
-                src={randomClefPic}
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            />
+            <div className={globalStyle.navbar}>
+                <h1 className={globalStyle.tallyCorrect}>V {tallyRight}</h1>
+                <Image
+                    src={randomClefPic}
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    layout="intrinsic"
+                />
+                <h1 className={globalStyle.tallyIncorrect}>X {tallyWrong}</h1>
+            </div><br />
 
-            <p className={styles.p}>{message}</p><br />
+            <p className={globalStyle.p}>{message}</p><br />
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
+            <div className={globalStyle.buttonContainer}>
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(clefPicArray[0])}>Treble Clef</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(clefPicArray[1])}>Bass Clef</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(clefPicArray[2])}>Grand Staff</button>
-            </div>
+            </div><br /><br /><br />
 
-            <div className={styles.navbar}>
-                <h1>Correct: {tallyRight}</h1>
-                <h1>Incorrect {tallyWrong}</h1>
-            </div>
+
+
+            <div className={globalStyle.flex}>
+                <button>
+                    <Link href="/piano/fingerNames">Back to: <br />Finger Name Game</Link>
+                </button>
+
+                <button>
+                    <Link href="/piano/keyRecognition">Continue to: <br />Key Recognition Lesson</Link>
+                </button>
+            </div> <br /> <br /> <br />
+
         </div>
     )
 }
