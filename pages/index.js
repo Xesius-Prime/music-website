@@ -5,8 +5,6 @@ export default function Home() {
   return (
     <div className={styles.center}>
 
-      <h1>Top Page</h1>
-
       <Image
         src='/music website main page.png'
         width={300}

@@ -54,6 +54,10 @@
   height: 230px;
 }
 
+.image3 {
+  width: 300px;
+}
+
 .video {
   width: 400px;
 }
@@ -62,4 +66,19 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.flexNoWrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tallyRight {
+  color: greenyellow;
+  font-size: 50px;
+}
+
+.tallyWrong {
+  color: red;
+  font-size: 50px;
 }

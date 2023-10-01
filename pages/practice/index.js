@@ -7,6 +7,8 @@ export default function index() {
         <div>
             <h1>Practice</h1>
 
+            <img className={styles.image3} src="https://www.willanacademy.com/wp-content/uploads/2017/07/guitar-kids-with-music-stand.jpg" alt="" />
+
             <ul className={styles.leftAlign}>
                 <li>
                     <Link
