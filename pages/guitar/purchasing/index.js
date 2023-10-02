@@ -21,7 +21,7 @@ export default function index() {
                 <b className={globalStyles.blueSolution}> buying a guitar.</b></p> <br /> <br />
 
 
-            <p>_______________________________________________</p>
+            <p>______________________</p>
 
             <h2><b>1. Watch Out for Cracks</b></h2>
 
@@ -32,7 +32,8 @@ export default function index() {
                 can <b>effect</b> the guitar, <br /> & make cracks appear or get bigger.</p>
             <br />
 
-            <p>_______________________________________________</p>
+            <p>______________________</p>
+
 
             <h2><b>2. Check the Fret Height</b></h2>
 
@@ -40,7 +41,8 @@ export default function index() {
 
             <p>Are the frets <b>too far from the neck <br /> and really hard to push down? </b> <br /><br />If so, you might consider getting something <br /> where the <b className={globalStyles.blueSolution}>strings are closer to the neck <br /> and easier to push down.</b></p> <br />
 
-            <p>_______________________________________________</p>
+            <p>______________________</p>
+
 
             <h2><b>3. Play Each Fret</b></h2>
 
@@ -58,7 +60,8 @@ export default function index() {
             <p>Even with some buzzes, <br /> the guitar might be well worth the asked price, regardless.</p>
 
 
-            <p>_______________________________________________</p>
+            <p>______________________</p>
+
 
 
             <h2><b>4. Check Fret Sharpness</b></h2>
@@ -71,14 +74,16 @@ export default function index() {
 
             <br />
 
-            <p>_______________________________________________</p>
+            <p>______________________</p>
+
 
             <h2><b>4. What Type?</b></h2>
             <img className={globalStyles.image} src="https://cdn.long-mcquade.com/files/49481/lg_278597b7a4a306c6465327a7228b570a.jpg" alt="" />
 
             <p>Do you want an <b>acoustic or electric?</b> <br /><br /> If you want an acoustic, <br /> do you want <b>steel string or nylon string?</b></p><br />
 
-            <p>__________________________________</p>
+            <p>______________________</p>
+
 
 
             <p>I recommend beginners <br /> <b className={globalStyles.blueSolution}>get the nylon string <br />acoustic guitar because:</b> </p><br />
