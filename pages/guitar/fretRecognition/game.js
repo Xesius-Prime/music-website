@@ -133,20 +133,21 @@ export default function index() {
                     />
                 </div>
 
-                <div className={styles.topPart1}>
-                    <div className={styles.topPart2}>
-                        <h1 className={styles.green}>{tallyRight}</h1>
-                        <Image
-                            src={currentNote}
-                            width={300}
-                            height={300}
-                            alt="Picture Test"
-                            className={globalStyles.image}
-                            suppressHydrationWarning={true}
-                        />
-                        <h1 className={styles.red}>{tallyWrong}</h1>
-                    </div>
-                </div> <br />
+                <div className={styles.topPart2}>
+                    <Image
+                        src={currentNote}
+                        width={300}
+                        height={300}
+                        alt="Picture Test"
+                        className={globalStyles.image}
+                        suppressHydrationWarning={true}
+                    />
+                </div>
+
+                <div className={globalStyles.flexNoWrap}>
+                    <h1 className={styles.green}>{tallyRight}</h1>
+                    <h1 className={styles.red}>{tallyWrong}</h1>
+                </div>
 
 
 
@@ -240,12 +241,13 @@ export default function index() {
                         <button onClick={() => handleNoteClick(EE10)} className={styles.button}></button>
                         <button onClick={() => handleNoteClick(EE11)} className={styles.button}></button>
                         <button onClick={() => handleNoteClick(EE12)} className={styles.button}></button>
+                    </div> <br /> <br />
+
+                    <div className={globalStyles.flex}>
+                        <button><Link href="/guitar/fretRecognition">Back to: <br /> Tabs for Guitar Lesson</Link></button>
+                        <button><Link href="/guitar/findNoteOnString">Continue to: <br /> Find Note On String Lesson</Link></button>
                     </div>
-                </div> <br /> <br />
-                <div className={globalStyles.flex}>
-                    <button><Link href="/guitar/fretRecognition">Back to: <br /> Tabs for Guitar Lesson</Link></button>
-                    <button><Link href="/guitar/findNoteOnString">Continue to: <br /> Find Note On String Lesson</Link></button>
-                </div> <br /> <br /> <br />
+                </div>
             </div>
         </div>
 

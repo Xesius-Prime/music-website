@@ -79,6 +79,7 @@
 .flexNoWrap {
   display: flex;
   justify-content: space-around;
+  height: 80px
 }
 
 .tallyCorrect {
