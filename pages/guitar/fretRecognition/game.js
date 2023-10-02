@@ -119,7 +119,7 @@ export default function index() {
 
     return (
         <div>
-            <div className={styles.main}> <br />
+            <div className={styles.main}>
                 <h1>Tab to Fretboard Game</h1>
 
                 <div>
@@ -131,7 +131,7 @@ export default function index() {
                         className={globalStyles.image}
                         suppressHydrationWarning={true}
                     />
-                </div> <br />
+                </div>
 
                 <div className={styles.topPart1}>
                     <div className={styles.topPart2}>
