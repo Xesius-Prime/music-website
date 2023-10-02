@@ -49,6 +49,7 @@ export default function index() {
                     height={300}
                     alt="Picture Test"
                     layout="intrinsic"
+                    className={globalStyles.oneThird}
                 />
 
                 <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
