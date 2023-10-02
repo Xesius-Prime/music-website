@@ -24,7 +24,10 @@ export default function index() {
             <p>_____________</p>
 
             <p>To remember the pattern above <br /> memorize this saying: </p>
-            <h2>They're ALL <b>Tones</b>, except <b className={globalStyle.blue}> BC & EF.</b></h2> <br />
+            <h2>They're ALL <b>Tones</b>, except <b className={globalStyle.blue}> BC & EF.</b></h2><br />
+
+            <p>_____________</p> <br /> <br />
+
 
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zttjkHvI_Zc?si=fdjPJI1tb6_mlpmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe> <br /> <br /> <br />

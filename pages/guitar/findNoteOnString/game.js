@@ -130,7 +130,7 @@ export default function index() {
 
     return (
         <div>
-            <div className={styles.main}> <br />
+            <div className={styles.main}>
                 <h1>{currentQuestion}</h1>
 
                 <div className={styles.topPart1}>
@@ -138,7 +138,7 @@ export default function index() {
                         <h1 className={styles.green}>{tallyRight}</h1>
                         <h1 className={styles.red}>{tallyWrong}</h1>
                     </div>
-                </div> <br />
+                </div>
 
 
 
