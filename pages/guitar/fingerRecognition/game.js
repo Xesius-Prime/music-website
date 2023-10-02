@@ -58,7 +58,7 @@ export default function index() {
                 <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
                 <p className={styles.p}>{message}</p>
                 <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
-            </div> <br />
+            </div>
 
 
             <div className={styles.buttonContainer}>

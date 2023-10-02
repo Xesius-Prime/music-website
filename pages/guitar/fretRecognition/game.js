@@ -242,11 +242,11 @@ export default function index() {
                         <button onClick={() => handleNoteClick(EE12)} className={styles.button}></button>
                     </div>
                 </div> <br /> <br />
+                <div className={globalStyles.flex}>
+                    <button><Link href="/guitar/fretRecognition">Back to: <br /> Tabs for Guitar Lesson</Link></button>
+                    <button><Link href="/guitar/findNoteOnString">Continue to: <br /> Find Note On String Lesson</Link></button>
+                </div> <br /> <br /> <br />
             </div>
-            <div className={globalStyles.flex}>
-                <button><Link href="/guitar/fretRecognition">Back to: <br /> Tabs for Guitar Lesson</Link></button>
-                <button><Link href="/guitar/findNoteOnString">Continue to: <br /> Find Note On String Lesson</Link></button>
-            </div> <br /> <br /> <br />
         </div>
 
     )
