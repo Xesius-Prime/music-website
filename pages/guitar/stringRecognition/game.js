@@ -40,18 +40,17 @@ export default function index() {
         <div className={globalStyles.center}>
             <h1>String Name Game</h1>
 
+            <Image
+                src={randomStringPic}
+                width={300}
+                height={300}
+                alt="Picture Test"
+                layout="intrinsic"
+                className={globalStyles.percentWidth}
+            />
+
             <div className={globalStyles.flexNoWrap}>
                 <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
-
-                <Image
-                    src={randomStringPic}
-                    width={300}
-                    height={300}
-                    alt="Picture Test"
-                    layout="intrinsic"
-                    className={globalStyles.oneThird}
-                />
-
                 <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
             </div>
 

@@ -45,16 +45,17 @@ export default function index() {
         <div className={globalStyles.center}>
             <h1>Finger Name Game <br />for Guitar</h1>
 
+            <Image
+                src={randomFingerPic}
+                width={300}
+                height={300}
+                alt="Picture Test"
+                className={globalStyles.image}
+                suppressHydrationWarning={true}
+            />
+
             <div className={globalStyles.navbar}>
                 <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
-                <Image
-                    src={randomFingerPic}
-                    width={300}
-                    height={300}
-                    alt="Picture Test"
-                    className={globalStyles.image}
-                    suppressHydrationWarning={true}
-                />
                 <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
             </div><br /> <br />
 

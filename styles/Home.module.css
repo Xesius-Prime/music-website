@@ -59,7 +59,7 @@
 }
 
 .video {
-  width: 100%;
+  width: 90%;
 }
 
 .flex {
@@ -117,6 +117,6 @@
   color: rgb(254, 236, 186);
 }
 
-.oneThird {
-  width: 33.33%;
+.percentWidth {
+  width: 50%;
 }
