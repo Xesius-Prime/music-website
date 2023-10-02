@@ -246,7 +246,7 @@ export default function index() {
                     <div className={globalStyles.flex}>
                         <button><Link href="/guitar/fretRecognition">Back to: <br /> Tabs for Guitar Lesson</Link></button>
                         <button><Link href="/guitar/findNoteOnString">Continue to: <br /> Find Note On String Lesson</Link></button>
-                    </div>
+                    </div><br /> <br />
                 </div>
             </div>
         </div>
