@@ -40,7 +40,7 @@ export default function index() {
         <div className={globalStyles.center}>
             <h1>String Name Game</h1>
 
-            <div className={globalStyles.navbar}>
+            <div className={globalStyles.flexNoWrap}>
                 <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
 
                 <Image
