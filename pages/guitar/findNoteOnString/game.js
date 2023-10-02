@@ -234,7 +234,7 @@ export default function index() {
                         <button onClick={() => handleNoteClick(EOnE)} className={styles.button}></button>
                     </div>
                 </div>
-            </div>
+            </div> <br /><br />
 
             <div className={globalStyles.flex}>
                 <button><Link href="/guitar/findNoteOnString">Back to: <br /> Find Note on String Lesson</Link></button>
