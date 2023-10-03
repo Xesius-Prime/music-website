@@ -126,4 +126,6 @@
 .divider {
   border-bottom: solid gold;
   margin-bottom: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
 }

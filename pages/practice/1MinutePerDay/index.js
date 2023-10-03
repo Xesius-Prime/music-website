@@ -4,13 +4,12 @@ import globalStyle from "../../../styles/Home.module.css"
 
 export default function index() {
     return (
-        <div className={styles.main}>
+        <div>
             <h1>Practice</h1>
-            <h2>One Minute Per Day</h2>
+            <h2>One Minute Per Day</h2><br /><br />
 
-
-            <div className={styles.p}>
-                <iframe width="400px" height="300px" src="https://www.youtube.com/embed/xvCLBGlhhrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className={globalStyle.video}>
+                <iframe src="https://www.youtube.com/embed/xvCLBGlhhrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div className={globalStyle.divider}>
@@ -31,12 +30,12 @@ export default function index() {
             </div>
 
 
-            <div className={globalStyle.divider}>
-                <p><b>Consistency</b></p>
 
-                <p>1 minute per day helps build consistency, <br /> solidifies a daily habit, & re-excites neurons.</p>
-                <p>By re-exciting the neurons, <br /> even for just 1 minute a day, <br /> you will be more likely to have it playing <br /> in the back of your mind, <br /> <br /> and <b>when you think of practice, <br /> it's still a form of practice,</b>  <br /> because you can practice <br /> with just your mind.</p> <br /> <br />
-            </div>
+            <p><b>Consistency</b></p>
+
+            <p>1 minute per day helps build consistency, <br /> solidifies a daily habit, & re-excites neurons.</p>
+            <p>By re-exciting the neurons, <br /> even for just 1 minute a day, <br /> you will be more likely to have it playing <br /> in the back of your mind, <br /> <br /> and <b>when you think of practice, <br /> it's still a form of practice,</b>  <br /> because you can practice <br /> with just your mind.</p> <br /> <br />
+
 
 
         </div>
