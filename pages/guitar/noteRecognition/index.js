@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import globalStyles from '../../../styles/Home.module.css';
 import styles from './guitarNoteRecognition.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 import E1 from '../../../public/Guitar/Note Recognition/1A.png';
 import G1 from '../../../public/Guitar/Note Recognition/1G.png';
@@ -52,10 +53,12 @@ export default function index() {
 
 
     return (
-        <div className={styles.main}> <br />
+        <div className={styles.main}>
 
             <div className={styles.topPart1}>
-                <h1>Note Recognition for Guitar</h1>
+                <h1>Guitar</h1>
+
+                <h2>Note to Fretboard <br /> Game</h2>
 
                 <div className={styles.topPart2}>
                     <h1 className={styles.green}>{tallyRight}</h1>
@@ -164,7 +167,12 @@ export default function index() {
                     <button className={styles.button}></button>
                     <button onClick={() => handleNoteClick(E2)} className={styles.button}></button>
                 </div>
-            </div>
+            </div><br /><br />
+
+            <div className={globalStyles.flex}>
+                <button><Link href="/guitar/findNoteOnString/game">Back to: <br /> Find Note On String <br /> Game</Link></button>
+                <button><Link href="">Continue to: <br /> More Stuff <br /> I Havent Added Yet...</Link></button>
+            </div> <br /> <br /> <br />
 
 
         </div>

@@ -45,7 +45,7 @@ export default function index() {
             <div className={globalStyle.journey}>
                 <Link
                     href={x.href}>
-                    {i + 1} {x.name}
+                    {i + 1}. {x.name}
                 </Link>
             </div>
         </div>

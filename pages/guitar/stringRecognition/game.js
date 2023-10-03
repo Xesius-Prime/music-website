@@ -38,7 +38,7 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>String Name Game</h1>
+            <h1>Guitar <br />String Names<br /> Game</h1><br /><br />
 
             <Image
                 src={randomStringPic}
@@ -50,8 +50,8 @@ export default function index() {
             />
 
             <div className={globalStyles.flexNoWrap}>
-                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
-                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
+                <h1 className={globalStyles.tallyCorrect}>{tallyRight}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>{tallyWrong}</h1>
             </div>
 
 

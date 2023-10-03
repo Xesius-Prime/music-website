@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function index() {
     return (
         <div className={globalStyles.center}>
-            <h1>Purchasing a Guitar</h1>
+            <h1>Purchasing a Guitar</h1><br /><br />
 
             <Image
                 src='/Guitar/Purchasing/man thinking.png'
@@ -44,7 +44,7 @@ export default function index() {
             <p>______________________</p>
 
 
-            <h2><b>3. Play Each Fret</b></h2>
+            <h2><b>3. Check Frets for Buzz</b></h2>
 
             <img className={globalStyles.image} src="https://i.pinimg.com/564x/af/49/11/af4911fc04c570f178287668a5416042.jpg" alt="" />
 
@@ -69,7 +69,7 @@ export default function index() {
             <img className={globalStyles.image} src="https://www.guitaranswerguy.com/wp-content/uploads/2016/12/feat_sharp_frets.jpg" alt="" />
 
 
-            <p>When you rub your finger <br /> down the top part of the neck, <br /><br /> <b>are the frets sticking out? </b> <br /><br />
+            <p>When you rub your finger <br /> down the top part of the neck, <br /><br /> <b>are the frets sharp & sticking out? </b> <br /><br />
                 If so dont worry, this can be fixed. <br /> <b className={globalStyles.blueSolution}>the guitar might be a bit dehydrated,<br /> or need filing.</b></p>
 
             <br />
@@ -85,8 +85,8 @@ export default function index() {
             <p>______________________</p>
 
 
-
-            <p>I recommend beginners <br /> <b className={globalStyles.blueSolution}>get the nylon string <br />acoustic guitar because:</b> </p><br />
+            <p>Don't know?</p>
+            <p>I recommend beginners: <br /> <b className={globalStyles.blueSolution}>get the nylon string <br />acoustic guitar because:</b> </p><br />
 
             <p>
                 <span className={globalStyles.underlineBold}>1. Easier On Fingers</span><br />

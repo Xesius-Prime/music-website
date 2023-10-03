@@ -43,7 +43,7 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>Finger Name Game <br />for Guitar</h1>
+            <h1>Guitar <br />Finger Name <br /> Game</h1>
 
             <Image
                 src={randomFingerPic}
@@ -55,9 +55,9 @@ export default function index() {
             />
 
             <div className={globalStyles.navbar}>
-                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
+                <h1 className={globalStyles.tallyCorrect}>{tallyRight}</h1>
                 <p className={styles.p}>{message}</p>
-                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>{tallyWrong}</h1>
             </div>
 
 

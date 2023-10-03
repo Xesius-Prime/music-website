@@ -122,3 +122,8 @@
 .percentWidth {
   width: 50%;
 }
+
+.divider {
+  border-bottom: solid gold;
+  margin-bottom: 10px;
+}

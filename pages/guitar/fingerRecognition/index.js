@@ -7,7 +7,7 @@ export default function index() {
 
     return (
         <div>
-            <h1>Finger Names - Lesson</h1> <br />
+            <h1>Guitar <br />Finger Names <br /> Lesson</h1> <br />
 
             <Image
                 src='/Guitar/Finger Names/guitar finger names.png'

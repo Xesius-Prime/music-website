@@ -8,25 +8,31 @@ export default function index() {
 
     return (
         <div>
-            <h1>Find Note On String</h1>
+            <div className={globalStyle.divider}>
+                <h1>Guitar</h1>
+                <h2>Find Note On String <br /> Lesson</h2> <br />
+            </div>
 
-            <Image
-                src='/Theory/Tones and Semitones Natural Notes.png'
-                width={300}
-                height={300}
-                alt="Picture Test"
-                layout="intrinsic"
-            /> <br />
+            <div className={globalStyle.divider}>
+                <Image
+                    src='/Theory/Tones and Semitones Natural Notes.png'
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    layout="intrinsic"
+                /> <br />
 
-            <h2><b>T = Tone = +2 or -2 frets</b></h2>
-            <h2><b className={globalStyle.blue}>S = Semitone = +1 or -1 frets</b></h2>
+                <h2><b>T = Tone = +2 or -2 frets</b></h2>
+                <h2><b className={globalStyle.blue}>S = Semitone = +1 or -1 frets</b></h2><br />
+            </div>
 
-            <p>_____________</p>
+            <div className={globalStyle.divider}>
+                <p>To remember the pattern above <br /> memorize this saying: </p>
+                <h2>They're ALL <b>Tones</b>, except <b className={globalStyle.blue}> BC & EF.</b></h2><br />
+            </div>
 
-            <p>To remember the pattern above <br /> memorize this saying: </p>
-            <h2>They're ALL <b>Tones</b>, except <b className={globalStyle.blue}> BC & EF.</b></h2><br />
 
-            <p>_____________</p> <br /> <br />
+
 
 
 

@@ -120,7 +120,8 @@ export default function index() {
     return (
         <div>
             <div className={styles.main}>
-                <h1>Tab to Fretboard Game</h1>
+                <h1>Guitar</h1><br />
+                <h2>Tab to Fretboard <br /> Game</h2><br />
 
                 <div>
                     <Image

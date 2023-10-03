@@ -8,7 +8,7 @@ export default function index() {
 
     return (
         <div>
-            <h1>Tabs for Guitar - Lesson</h1> <br />
+            <h1>Guitar Tabs <br /> Lesson</h1> <br />
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/uAHTWsOG9k8?si=ziFWOO8kiWbStAjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe> <br /> <br /> <br />
 
