@@ -246,7 +246,6 @@ export default function index() {
                 <button><Link href="/guitar/noteRecognition">Continue to: <br /> Note Recognition Lesson</Link></button>
             </div> <br /> <br /> <br />
         </div>
-
     )
 }
 

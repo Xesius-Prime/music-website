@@ -54,7 +54,7 @@ export default function index() {
 
     return (
         <div className={globalStyle.center}>
-            <h1>Guitar</h1>
+            <h1>Guitar</h1><br />
 
             <Image
                 src='/Guitar/guitar-pic.png'

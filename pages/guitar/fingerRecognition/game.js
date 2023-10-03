@@ -43,7 +43,8 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>Guitar <br />Finger Name <br /> Game</h1>
+            <h1>Guitar</h1>
+            <h2>Finger Name <br /> Game</h2>
 
             <Image
                 src={randomFingerPic}

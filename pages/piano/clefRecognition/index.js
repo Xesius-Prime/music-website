@@ -32,40 +32,61 @@ export default function index() {
 
     return (
         <div className={globalStyle.center}>
-            <h1>Piano Clef Recognition</h1><br />
+            <div className={globalStyle.divider}>
+                <h1>Piano</h1>
+                <h2>Clef Names <br />Lesson</h2>
+            </div>
 
-            <div className={globalStyle.navbar}>
-                <h1 className={globalStyle.tallyCorrect}>V {tallyRight}</h1>
+            <p>While <b>most instruments have one clef,</b> <br />
+                <b className={globalStyle.blue}>piano has 2 clefs:</b></p> <br />
+
+
+            <p><b className={globalStyle.blue}>1. Treble Clef</b><br />
+                (Right Hand)</p>
+
+            <Image
+                src={clefPicArray[0]}
+                width={300}
+                height={300}
+                alt="Picture Test"
+                layout="intrinsic"
+            /> <br />
+
+            <p>AND</p>
+
+            <div className={globalStyle.divider}>
+                <p><b className={globalStyle.blue}>2. Bass Clef</b><br />
+                    (Left Hand)</p>
+
                 <Image
-                    src={randomClefPic}
+                    src={clefPicArray[1]}
                     width={300}
                     height={300}
                     alt="Picture Test"
                     layout="intrinsic"
-                />
-                <h1 className={globalStyle.tallyIncorrect}>X {tallyWrong}</h1>
-            </div><br />
+                /><br /><br /> <br />
+            </div>
 
-            <p className={globalStyle.p}>{message}</p><br />
+            <p>BUT they are joined together in what is called...</p>
 
-            <div className={globalStyle.buttonContainer}>
-                <button className={globalStyle.buttons}
-                    onClick={() => handleCheckAnswer(clefPicArray[0])}>Treble Clef</button>
-                <button className={globalStyle.buttons}
-                    onClick={() => handleCheckAnswer(clefPicArray[1])}>Bass Clef</button>
-                <button className={globalStyle.buttons}
-                    onClick={() => handleCheckAnswer(clefPicArray[2])}>Grand Staff</button>
-            </div><br /><br /><br />
+            <p>the<b> GRAND STAFF</b></p>
 
+            <Image
+                src={clefPicArray[2]}
+                width={300}
+                height={300}
+                alt="Picture Test"
+                layout="intrinsic"
+            /> <br /> <br /> <br /><br />
 
 
             <div className={globalStyle.flex}>
                 <button>
-                    <Link href="/piano/fingerNames">Back to: <br />Finger Name Game</Link>
+                    <Link href="/piano/fingerNames/game">Back to: <br />Finger Name Game</Link>
                 </button>
 
                 <button>
-                    <Link href="/piano/keyRecognition">Continue to: <br />Key Recognition Lesson</Link>
+                    <Link href="/piano/clefRecognition/game">Continue to: <br />Clef Name Game</Link>
                 </button>
             </div> <br /> <br /> <br />
 

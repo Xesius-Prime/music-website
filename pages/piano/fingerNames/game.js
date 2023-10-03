@@ -41,22 +41,23 @@ export default function pianoFingersPractice() {
 
     return (
         <div className={globalStyle.center}>
-            <h1>Piano Finger Recognition Practice</h1>
+            <h1>Piano </h1>
+            <h2>Finger Name <br /> Game</h2>
 
+            <Image
+                src={randomFingerPic}
+                width={300}
+                height={300}
+                alt="Picture Test"
+                layout="intrinsic"
+            />
 
             <div className={globalStyle.navbar}>
-                <h1 className={globalStyle.tallyCorrect}>V {tallyRight}</h1>
-                <Image
-                    src={randomFingerPic}
-                    width={300}
-                    height={300}
-                    alt="Picture Test"
-                    layout="intrinsic"
-                />
-                <h1 className={globalStyle.tallyIncorrect}>X {tallyWrong}</h1>
+                <h1 className={globalStyle.tallyCorrect}>{tallyRight}</h1>
+                <p className={globalStyle.p}>{message}</p>
+                <h1 className={globalStyle.tallyIncorrect}>{tallyWrong}</h1>
             </div>
 
-            <p className={globalStyle.p}>{message}</p><br />
 
             <div className={globalStyle.buttonContainer}>
                 <button className={globalStyle.buttons}
@@ -90,7 +91,7 @@ export default function pianoFingersPractice() {
                 </button>
 
                 <button>
-                    <Link href="/piano/clefRecognition">Continue to: <br />Clef Recognition</Link>
+                    <Link href="/piano/clefRecognition">Continue to: <br />Clef Name Lesson</Link>
                 </button>
             </div> <br /> <br /> <br />
         </div>

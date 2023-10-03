@@ -1,4 +1,4 @@
-import styles from '../../../../styles/Home.module.css';
+import globalStyle from '../../../../styles/Home.module.css';
 import styles2 from '../../fingerNames/fingerNames.module.css';
 import React, { useState } from 'react'
 import Image from 'next/image';
@@ -63,8 +63,9 @@ export default function game() {
 
 
     return (
-        <div className={styles.center}>
-            <h1>Piano Clef Recognition</h1>
+        <div className={globalStyle.center}>
+            <h1>Piano</h1>
+            <h2>Black Key <br />Game</h2>
 
             <Image
                 src={randomBlackKeyPic}
@@ -75,27 +76,30 @@ export default function game() {
                 className={styles2.image}
             />
 
-            <p className={styles.p}>{message}</p>
-            <p>Is the RED KEY a part of the <b>group of 2 black keys</b>, <br /> or part of the <b>group of 3 black keys?</b></p><br />
+            <p className={globalStyle.p}>{message}</p>
+            <p>Is the RED KEY a part of the <b>group of 2 black keys</b>, <br /> or part of the <b>group of 3 black keys?</b></p>
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
+            <div className={globalStyle.navbar}>
+                <h1 className={globalStyle.tallyCorrect}>{tallyRight}</h1>
+                <h1 className={globalStyle.tallyIncorrect}>{tallyWrong}</h1>
+            </div> <br />
+
+            <div className={globalStyle.buttonContainer}>
+                <button className={globalStyle.buttons}
                     onClick={handleCheck2BlackKeyAnswer}>Group of 2</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={handleCheck3BlackKeyAnswer}>Group of 3</button>
-            </div>
+            </div><br /> <br />
 
-            <div className={styles.navbar}>
-                <h1>Correct: {tallyRight}</h1>
-                <h1>Incorrect: {tallyWrong}</h1>
-            </div>
+            <div className={globalStyle.flex}>
+                <button>
+                    <Link href="/piano/keyRecognition/blackKeys">Back to: <br />Why Learn <br /> Key Names?</Link>
+                </button>
 
-            <button>
-                <Link
-                    href="/piano/keyRecognition/whiteKeys">
-                    TO WHITE KEYS
-                </Link>
-            </button> <br /> <br />
+                <button>
+                    <Link href="/piano/keyRecognition/whiteKeys">Continue to: <br />White Keys <br /> Lesson & Game</Link>
+                </button>
+            </div> <br /> <br /> <br />
         </div>
     )
 }

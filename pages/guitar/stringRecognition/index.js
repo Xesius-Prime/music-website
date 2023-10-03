@@ -8,7 +8,8 @@ export default function index() {
 
     return (
         <div className={styles.center}>
-            <h1>Guitar <br />String Names <br /> Lesson</h1> <br />
+            <h1>Guitar</h1>
+            <h2>String Names <br /> Lesson</h2> <br />
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/D-GJFnyrSrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe> <br /> <br /> <br /> <br />
 

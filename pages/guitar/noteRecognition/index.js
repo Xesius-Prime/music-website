@@ -171,7 +171,7 @@ export default function index() {
 
             <div className={globalStyles.flex}>
                 <button><Link href="/guitar/findNoteOnString/game">Back to: <br /> Find Note On String <br /> Game</Link></button>
-                <button><Link href="">Continue to: <br /> More Stuff <br /> I Havent Added Yet...</Link></button>
+                <button><Link href="/guitar">The End</Link></button>
             </div> <br /> <br /> <br />
 
 

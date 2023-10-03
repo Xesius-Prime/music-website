@@ -9,7 +9,8 @@ export default function pianoFingersPractice() {
     return (
         <div>
             <div className={styles.center}>
-                <h1>Finger Names & Game <br /> for Piano</h1><br />
+                <h1>Piano</h1>
+                <h2>Finger Name <br /> Lessson</h2><br />
 
                 <Image
                     src='/Piano/Finger Pics/piano finger names.png'
