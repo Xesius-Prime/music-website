@@ -241,8 +241,8 @@ export default function index() {
                 </div>
             </div> <br /><br />
 
-            <div className={globalStyles.flex}>
-                <button><Link href="/guitar/findNoteOnString">Back to: <br /> Find Note on String Lesson</Link></button>
+            <div className={globalStyles.flexNoWrap}>
+                <button><Link href="/guitar/findNoteOnString">Back to: <br /> Find Note On String Lesson</Link></button>
                 <button><Link href="/guitar/noteRecognition">Continue to: <br /> Note Recognition Lesson</Link></button>
             </div> <br /> <br /> <br />
         </div>
