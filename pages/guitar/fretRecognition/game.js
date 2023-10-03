@@ -146,8 +146,8 @@ export default function index() {
                 </div>
 
                 <div className={globalStyles.flexNoWrap}>
-                    <h1 className={styles.green}>{tallyRight}</h1>
-                    <h1 className={styles.red}>{tallyWrong}</h1>
+                    <h1 className={globalStyles.tallyCorrect}>{tallyRight}</h1>
+                    <h1 className={globalStyles.tallyIncorrect}>{tallyWrong}</h1>
                 </div>
 
 

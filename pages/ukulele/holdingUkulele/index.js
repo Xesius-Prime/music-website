@@ -6,7 +6,8 @@ import Link from "next/link";
 export default function index() {
     return (
         <div>
-            <h1>Holding the Ukulele</h1>
+            <h1>Ukulele</h1>
+            <h2>Holding the Ukulele <br />Lesson</h2>
 
             <div className={styles.sections}>
                 <h2>1.</h2>
@@ -41,11 +42,9 @@ export default function index() {
             </div> <br /> <br />
 
             <div className={styles.flex}>
-
-
-                <button><Link href="/ukulele">Back to Ukulele Overview</Link></button>
-                <button><Link href="/ukulele/stringRecognition">Continue to String Names</Link></button>
-            </div>
+                <button><Link href="/ukulele">Back to: <br /> Ukulele Overview</Link></button>
+                <button><Link href="/ukulele/holdingUkulele/game">Continue to: <br /> Holding the Ukulele Game</Link></button>
+            </div><br /><br />
         </div>
     )
 }

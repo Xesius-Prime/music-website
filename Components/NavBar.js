@@ -31,6 +31,12 @@ export default function NavBar() {
                     Theory
                 </Link>
 
+                <Link
+                    href="/misc"
+                    className={styles.navbarInstance}>
+                    Misc
+                </Link>
+
             </ul>
         </div>
     )

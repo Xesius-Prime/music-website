@@ -1,6 +1,7 @@
-import styles from '../../../styles/Home.module.css';
+import globalStyle from '../../../styles/Home.module.css';
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const holdingUkulelePicArray = [
     '/Ukulele/Holding the Ukulele/left hand ukulele.png',
@@ -29,8 +30,9 @@ export default function index() {
 
 
     return (
-        <div className={styles.center}>
-            <h1>Holding the Ukulele Game</h1>
+        <div className={globalStyle.center}>
+            <h1>Ukulele</h1>
+            <h2>Holding the Ukulele <br />Game</h2><br />
 
             <Image
                 src={randomHoldingUkulelePic}
@@ -40,19 +42,24 @@ export default function index() {
                 layout="intrinsic"
             />
 
-            <p className={styles.p}>{message}</p><br />
+            <div className={globalStyle.navbar}>
+                <h1 className={globalStyle.tallyCorrect}>{tallyRight}</h1>
+                <p className={globalStyle.p}>{message}</p>
+                <h1 className={globalStyle.tallyIncorrect}>{tallyWrong}</h1>
+            </div><br />
 
-            <div className={styles.buttonContainer}>
-                <button className={styles.buttons}
+
+            <div className={globalStyle.buttonContainer}>
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(holdingUkulelePicArray[0])}>Yes</button>
-                <button className={styles.buttons}
+                <button className={globalStyle.buttons}
                     onClick={() => handleCheckAnswer(holdingUkulelePicArray[1])}>No</button>
-            </div>
+            </div><br /><br /><br />
 
-            <div className={styles.navbar}>
-                <h1>Correct: {tallyRight}</h1>
-                <h1>Incorrect {tallyWrong}</h1>
-            </div>
+            <div className={globalStyle.flex}>
+                <button><Link href="/ukulele/holdingUkulele">Back to: <br /> Holding the Ukulele Lesson</Link></button>
+                <button><Link href="/ukulele/stringRecognition">Continue to: <br /> String Name Lesson</Link></button>
+            </div><br /><br />
         </div>
     )
 }

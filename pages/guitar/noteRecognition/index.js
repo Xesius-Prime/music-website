@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
+import globalStyle from '../../../styles/Home.module.css';
 import styles from './guitarNoteRecognition.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -60,19 +60,20 @@ export default function index() {
 
                 <h2>Note to Fretboard <br /> Game</h2>
 
-                <div className={styles.topPart2}>
-                    <h1 className={styles.green}>{tallyRight}</h1>
-                    <Image
-                        src={currentNote}
-                        width={300}
-                        height={300}
-                        alt="Picture Test"
-                        className={globalStyles.image}
-                        suppressHydrationWarning={true}
-                    />
-                    <h1 className={styles.red}>{tallyWrong}</h1>
+                <Image
+                    src={currentNote}
+                    width={300}
+                    height={300}
+                    alt="Picture Test"
+                    className={globalStyle.image}
+                    suppressHydrationWarning={true}
+                />
+
+                <div className={globalStyle.flexNoWrap}>
+                    <h1 className={globalStyle.tallyCorrect}>{tallyRight}</h1>
+                    <h1 className={globalStyle.tallyIncorrect}>{tallyWrong}</h1>
                 </div>
-            </div> <br />
+            </div>
 
 
 
@@ -169,7 +170,7 @@ export default function index() {
                 </div>
             </div><br /><br />
 
-            <div className={globalStyles.flex}>
+            <div className={globalStyle.flex}>
                 <button><Link href="/guitar/findNoteOnString/game">Back to: <br /> Find Note On String <br /> Game</Link></button>
                 <button><Link href="/guitar">The End</Link></button>
             </div> <br /> <br /> <br />

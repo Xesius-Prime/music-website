@@ -59,6 +59,22 @@
   width: 300px;
 }
 
+.clickableImage {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.clickableImage:hover {
+  border: solid red;
+  border-radius: 20%;
+}
+
+.clickableImage.clicked {
+  /* Define styles for when the image has been clicked */
+  border-color: green;
+  /* Change the border color to indicate it has been clicked */
+}
+
 .video {
   width: 90%;
 }
@@ -79,17 +95,20 @@
 .flexNoWrap {
   display: flex;
   justify-content: space-around;
-  height: 80px
+  height: 66px;
 }
 
 .tallyCorrect {
   color: greenyellow;
-  font-size: 200%;
+  font-size: 300%;
+  margin: 0%;
+
 }
 
 .tallyIncorrect {
   color: red;
-  font-size: 200%;
+  font-size: 300%;
+  margin: 0%;
 }
 
 .divWidth {

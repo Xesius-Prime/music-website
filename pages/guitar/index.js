@@ -23,7 +23,7 @@ export default function index() {
             href: "/guitar/fingerRecognition"
         },
         {
-            name: "Tabs & Fretboard",
+            name: "Tabs to Fretboard",
             href: "/guitar/fretRecognition"
         },
         {
