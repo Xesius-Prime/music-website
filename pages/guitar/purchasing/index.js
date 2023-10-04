@@ -35,11 +35,11 @@ export default function index() {
             <p>______________________</p>
 
 
-            <h2><b>2. Check the Fret Height</b></h2>
+            <h2><b>2. Check the String to Neck Height</b></h2>
 
             <img className={globalStyles.image} src="https://guitargearfinder.com/wp-content/uploads/2019/10/guitar-action-height-acoustic-guitar.jpg" alt="" />
 
-            <p>Are the frets <b>too far from the neck <br /> and really hard to push down? </b> <br /><br />If so, you might consider getting something <br /> where the <b className={globalStyles.blueSolution}>strings are closer to the neck <br /> and easier to push down.</b></p> <br />
+            <p>Are the strings <b>too far from the neck <br /> and really hard to push all the way down? </b> <br /><br />If so, you might consider getting something <br /> where the <b className={globalStyles.blueSolution}>strings are closer to the neck <br /> and easier to push down.</b></p> <br />
 
             <p>______________________</p>
 
@@ -93,7 +93,7 @@ export default function index() {
                 Rounded soft nylong strings <br /> are softer on the fingertips <br /> than sharp steel wire strings.<br /> <br />
                 <span className={globalStyles.underlineBold}>2. Wider Neck</span><br />Makes playing chords <br /> & close notes a little easier. <br /> <br />
                 <span className={globalStyles.underlineBold}>3. Acoustic</span> <br />
-                Easily playable & portable, <br /> or even when power goes out.
+                Easily playable & portable, <br /> even when power goes out.
             </p>
 
 

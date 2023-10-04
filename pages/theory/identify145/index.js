@@ -66,22 +66,18 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>Identify 1, 4, 5</h1>
+            <h1>Theory</h1>
+            <h2>Identify 1, 4, 5</h2>
 
-
+            <div>
+                <h1>{question}</h1>
+                <h3>Based on the chords shown above, what key are we in?</h3>
+            </div>
 
             <div className={globalStyles.flexNoWrap}>
-
-                <h1 className={globalStyles.tallyCorrect}>V {tallyRight}</h1>
-
-                <div>
-                    <h2>{question}</h2>
-                    <h3>Based on the chords shown above, what key are we in?</h3>
-                </div>
-
-                <h1 className={globalStyles.tallyIncorrect}>X {tallyWrong}</h1>
-
-            </div> <br /> <br />
+                <h1 className={globalStyles.tallyCorrect}>{tallyRight}</h1>
+                <h1 className={globalStyles.tallyIncorrect}>{tallyWrong}</h1>
+            </div>
 
 
             <div className={styles.buttonContainer}>

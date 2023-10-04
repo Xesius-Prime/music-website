@@ -22,9 +22,11 @@ export default function Index() {
             const randomNumber = Math.floor(Math.random() * handArray.length);
             setQuestion(handArray[randomNumber]);
             setTallyRight(prev => prev + 1);
+            setMessage('Correct!');
 
         } else {
             setTallyWrong(prev => prev + 1);
+            setMessage('Opps! Try Again...');
         }
     }
 

@@ -148,3 +148,18 @@
   margin-left: 25%;
   margin-right: 25%;
 }
+
+.yellowButton {
+  background-color: yellow;
+  border-radius: 15%;
+  border: solid red 3px;
+}
+
+.blackText {
+  color: black;
+  font-weight: 1000;
+}
+
+.titleDividerBackground {
+  background-color: rgb(72, 0, 0);
+}
