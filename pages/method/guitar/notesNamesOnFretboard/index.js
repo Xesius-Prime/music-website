@@ -1,91 +1,91 @@
 import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
+import globalStyles from '../../../../styles/Home.module.css';
 import styles from '../noteRecognition/guitarNoteRecognition.module.css'
 import Image from 'next/image';
 
-import e0 from '../../../public/Guitar/Fret Recognition/e0.png';
-import e1 from '../../../public/Guitar/Fret Recognition/e1.png';
-import e2 from '../../../public/Guitar/Fret Recognition/e2.png';
-import e3 from '../../../public/Guitar/Fret Recognition/e3.png';
-import e4 from '../../../public/Guitar/Fret Recognition/e4.png';
-import e5 from '../../../public/Guitar/Fret Recognition/e5.png';
-import e6 from '../../../public/Guitar/Fret Recognition/e6.png';
-import e7 from '../../../public/Guitar/Fret Recognition/e7.png';
-import e8 from '../../../public/Guitar/Fret Recognition/e8.png';
-import e9 from '../../../public/Guitar/Fret Recognition/e9.png';
-import e10 from '../../../public/Guitar/Fret Recognition/e10.png';
-import e11 from '../../../public/Guitar/Fret Recognition/e11.png';
-import e12 from '../../../public/Guitar/Fret Recognition/e12.png';
+import e0 from '../../../../public/Guitar/Fret Recognition/e0.png';
+import e1 from '../../../../public/Guitar/Fret Recognition/e1.png';
+import e2 from '../../../../public/Guitar/Fret Recognition/e2.png';
+import e3 from '../../../../public/Guitar/Fret Recognition/e3.png';
+import e4 from '../../../../public/Guitar/Fret Recognition/e4.png';
+import e5 from '../../../../public/Guitar/Fret Recognition/e5.png';
+import e6 from '../../../../public/Guitar/Fret Recognition/e6.png';
+import e7 from '../../../../public/Guitar/Fret Recognition/e7.png';
+import e8 from '../../../../public/Guitar/Fret Recognition/e8.png';
+import e9 from '../../../../public/Guitar/Fret Recognition/e9.png';
+import e10 from '../../../../public/Guitar/Fret Recognition/e10.png';
+import e11 from '../../../../public/Guitar/Fret Recognition/e11.png';
+import e12 from '../../../../public/Guitar/Fret Recognition/e12.png';
 
-import B0 from '../../../public/Guitar/Fret Recognition/B0.png';
-import B1 from '../../../public/Guitar/Fret Recognition/B1.png';
-import B2 from '../../../public/Guitar/Fret Recognition/B2.png';
-import B3 from '../../../public/Guitar/Fret Recognition/B3.png';
-import B4 from '../../../public/Guitar/Fret Recognition/B4.png';
-import B5 from '../../../public/Guitar/Fret Recognition/B5.png';
-import B6 from '../../../public/Guitar/Fret Recognition/B6.png';
-import B7 from '../../../public/Guitar/Fret Recognition/B7.png';
-import B8 from '../../../public/Guitar/Fret Recognition/B8.png';
-import B9 from '../../../public/Guitar/Fret Recognition/B9.png';
-import B10 from '../../../public/Guitar/Fret Recognition/B10.png';
-import B11 from '../../../public/Guitar/Fret Recognition/B11.png';
-import B12 from '../../../public/Guitar/Fret Recognition/B12.png';
+import B0 from '../../../../public/Guitar/Fret Recognition/B0.png';
+import B1 from '../../../../public/Guitar/Fret Recognition/B1.png';
+import B2 from '../../../../public/Guitar/Fret Recognition/B2.png';
+import B3 from '../../../../public/Guitar/Fret Recognition/B3.png';
+import B4 from '../../../../public/Guitar/Fret Recognition/B4.png';
+import B5 from '../../../../public/Guitar/Fret Recognition/B5.png';
+import B6 from '../../../../public/Guitar/Fret Recognition/B6.png';
+import B7 from '../../../../public/Guitar/Fret Recognition/B7.png';
+import B8 from '../../../../public/Guitar/Fret Recognition/B8.png';
+import B9 from '../../../../public/Guitar/Fret Recognition/B9.png';
+import B10 from '../../../../public/Guitar/Fret Recognition/B10.png';
+import B11 from '../../../../public/Guitar/Fret Recognition/B11.png';
+import B12 from '../../../../public/Guitar/Fret Recognition/B12.png';
 
-import G0 from '../../../public/Guitar/Fret Recognition/G0.png';
-import G1 from '../../../public/Guitar/Fret Recognition/G1.png';
-import G2 from '../../../public/Guitar/Fret Recognition/G2.png';
-import G3 from '../../../public/Guitar/Fret Recognition/G3.png';
-import G4 from '../../../public/Guitar/Fret Recognition/G4.png';
-import G5 from '../../../public/Guitar/Fret Recognition/G5.png';
-import G6 from '../../../public/Guitar/Fret Recognition/G6.png';
-import G7 from '../../../public/Guitar/Fret Recognition/G7.png';
-import G8 from '../../../public/Guitar/Fret Recognition/G8.png';
-import G9 from '../../../public/Guitar/Fret Recognition/G9.png';
-import G10 from '../../../public/Guitar/Fret Recognition/G10.png';
-import G11 from '../../../public/Guitar/Fret Recognition/G11.png';
-import G12 from '../../../public/Guitar/Fret Recognition/G12.png';
+import G0 from '../../../../public/Guitar/Fret Recognition/G0.png';
+import G1 from '../../../../public/Guitar/Fret Recognition/G1.png';
+import G2 from '../../../../public/Guitar/Fret Recognition/G2.png';
+import G3 from '../../../../public/Guitar/Fret Recognition/G3.png';
+import G4 from '../../../../public/Guitar/Fret Recognition/G4.png';
+import G5 from '../../../../public/Guitar/Fret Recognition/G5.png';
+import G6 from '../../../../public/Guitar/Fret Recognition/G6.png';
+import G7 from '../../../../public/Guitar/Fret Recognition/G7.png';
+import G8 from '../../../../public/Guitar/Fret Recognition/G8.png';
+import G9 from '../../../../public/Guitar/Fret Recognition/G9.png';
+import G10 from '../../../../public/Guitar/Fret Recognition/G10.png';
+import G11 from '../../../../public/Guitar/Fret Recognition/G11.png';
+import G12 from '../../../../public/Guitar/Fret Recognition/G12.png';
 
-import D0 from '../../../public/Guitar/Fret Recognition/D0.png';
-import D1 from '../../../public/Guitar/Fret Recognition/D1.png';
-import D2 from '../../../public/Guitar/Fret Recognition/D2.png';
-import D3 from '../../../public/Guitar/Fret Recognition/D3.png';
-import D4 from '../../../public/Guitar/Fret Recognition/D4.png';
-import D5 from '../../../public/Guitar/Fret Recognition/D5.png';
-import D6 from '../../../public/Guitar/Fret Recognition/D6.png';
-import D7 from '../../../public/Guitar/Fret Recognition/D7.png';
-import D8 from '../../../public/Guitar/Fret Recognition/D8.png';
-import D9 from '../../../public/Guitar/Fret Recognition/D9.png';
-import D10 from '../../../public/Guitar/Fret Recognition/D10.png';
-import D11 from '../../../public/Guitar/Fret Recognition/D11.png';
-import D12 from '../../../public/Guitar/Fret Recognition/D12.png';
+import D0 from '../../../../public/Guitar/Fret Recognition/D0.png';
+import D1 from '../../../../public/Guitar/Fret Recognition/D1.png';
+import D2 from '../../../../public/Guitar/Fret Recognition/D2.png';
+import D3 from '../../../../public/Guitar/Fret Recognition/D3.png';
+import D4 from '../../../../public/Guitar/Fret Recognition/D4.png';
+import D5 from '../../../../public/Guitar/Fret Recognition/D5.png';
+import D6 from '../../../../public/Guitar/Fret Recognition/D6.png';
+import D7 from '../../../../public/Guitar/Fret Recognition/D7.png';
+import D8 from '../../../../public/Guitar/Fret Recognition/D8.png';
+import D9 from '../../../../public/Guitar/Fret Recognition/D9.png';
+import D10 from '../../../../public/Guitar/Fret Recognition/D10.png';
+import D11 from '../../../../public/Guitar/Fret Recognition/D11.png';
+import D12 from '../../../../public/Guitar/Fret Recognition/D12.png';
 
-import A0 from '../../../public/Guitar/Fret Recognition/A0.png';
-import A1 from '../../../public/Guitar/Fret Recognition/A1.png';
-import A2 from '../../../public/Guitar/Fret Recognition/A2.png';
-import A3 from '../../../public/Guitar/Fret Recognition/A3.png';
-import A4 from '../../../public/Guitar/Fret Recognition/A4.png';
-import A5 from '../../../public/Guitar/Fret Recognition/A5.png';
-import A6 from '../../../public/Guitar/Fret Recognition/A6.png';
-import A7 from '../../../public/Guitar/Fret Recognition/A7.png';
-import A8 from '../../../public/Guitar/Fret Recognition/A8.png';
-import A9 from '../../../public/Guitar/Fret Recognition/A9.png';
-import A10 from '../../../public/Guitar/Fret Recognition/A10.png';
-import A11 from '../../../public/Guitar/Fret Recognition/A11.png';
-import A12 from '../../../public/Guitar/Fret Recognition/A12.png';
+import A0 from '../../../../public/Guitar/Fret Recognition/A0.png';
+import A1 from '../../../../public/Guitar/Fret Recognition/A1.png';
+import A2 from '../../../../public/Guitar/Fret Recognition/A2.png';
+import A3 from '../../../../public/Guitar/Fret Recognition/A3.png';
+import A4 from '../../../../public/Guitar/Fret Recognition/A4.png';
+import A5 from '../../../../public/Guitar/Fret Recognition/A5.png';
+import A6 from '../../../../public/Guitar/Fret Recognition/A6.png';
+import A7 from '../../../../public/Guitar/Fret Recognition/A7.png';
+import A8 from '../../../../public/Guitar/Fret Recognition/A8.png';
+import A9 from '../../../../public/Guitar/Fret Recognition/A9.png';
+import A10 from '../../../../public/Guitar/Fret Recognition/A10.png';
+import A11 from '../../../../public/Guitar/Fret Recognition/A11.png';
+import A12 from '../../../../public/Guitar/Fret Recognition/A12.png';
 
-import EE0 from '../../../public/Guitar/Fret Recognition/EE0.png';
-import EE1 from '../../../public/Guitar/Fret Recognition/EE1.png';
-import EE2 from '../../../public/Guitar/Fret Recognition/EE2.png';
-import EE3 from '../../../public/Guitar/Fret Recognition/EE3.png';
-import EE4 from '../../../public/Guitar/Fret Recognition/EE4.png';
-import EE5 from '../../../public/Guitar/Fret Recognition/EE5.png';
-import EE6 from '../../../public/Guitar/Fret Recognition/EE6.png';
-import EE7 from '../../../public/Guitar/Fret Recognition/EE7.png';
-import EE8 from '../../../public/Guitar/Fret Recognition/EE8.png';
-import EE9 from '../../../public/Guitar/Fret Recognition/EE9.png';
-import EE10 from '../../../public/Guitar/Fret Recognition/EE10.png';
-import EE11 from '../../../public/Guitar/Fret Recognition/EE11.png';
-import EE12 from '../../../public/Guitar/Fret Recognition/EE12.png';
+import EE0 from '../../../../public/Guitar/Fret Recognition/EE0.png';
+import EE1 from '../../../../public/Guitar/Fret Recognition/EE1.png';
+import EE2 from '../../../../public/Guitar/Fret Recognition/EE2.png';
+import EE3 from '../../../../public/Guitar/Fret Recognition/EE3.png';
+import EE4 from '../../../../public/Guitar/Fret Recognition/EE4.png';
+import EE5 from '../../../../public/Guitar/Fret Recognition/EE5.png';
+import EE6 from '../../../../public/Guitar/Fret Recognition/EE6.png';
+import EE7 from '../../../../public/Guitar/Fret Recognition/EE7.png';
+import EE8 from '../../../../public/Guitar/Fret Recognition/EE8.png';
+import EE9 from '../../../../public/Guitar/Fret Recognition/EE9.png';
+import EE10 from '../../../../public/Guitar/Fret Recognition/EE10.png';
+import EE11 from '../../../../public/Guitar/Fret Recognition/EE11.png';
+import EE12 from '../../../../public/Guitar/Fret Recognition/EE12.png';
 
 
 
@@ -117,10 +117,10 @@ export default function index() {
 
 
     return (
-        <div className={styles.main}> <br />
+        <div className={styles.main}>
 
             <div className={styles.topPart1}>
-                <h1>Note Recognition for Guitar</h1>
+                <h1>Note Recognition for Guitar</h1><br /><br />
 
                 <div className={styles.topPart2}>
                     <h1 className={styles.green}>{tallyRight}</h1>

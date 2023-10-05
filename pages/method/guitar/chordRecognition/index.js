@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
+import globalStyles from '../../../../styles/Home.module.css';
 import styles from './chordPatterns.module.css';
 import Image from 'next/image';
 
