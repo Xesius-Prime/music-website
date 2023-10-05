@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import globalStyles from '../../../styles/Home.module.css';
+import globalStyles from '../../../../styles/Home.module.css';
 import styles from '../../guitar/chordRecognition/chordPatterns.module.css';
 import Image from 'next/image';
 
@@ -35,7 +35,7 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>String Recognition</h1>
+            <h1>String Recognition</h1><br /><br />
 
             <Image
                 src={randomStringPic}
@@ -45,7 +45,12 @@ export default function index() {
                 layout="intrinsic"
             />
 
-            <p className={styles.p}>{message}</p><br />
+            <div className={globalStyles.navbar}>
+                <h1 className={globalStyles.tallyCorrect}>{tallyRight}</h1>
+                <p className={styles.p}>{message}</p>
+                <h1 className={globalStyles.tallyIncorrect}>{tallyWrong}</h1>
+            </div>
+
 
 
             <div className={styles.buttonContainer}>
@@ -72,10 +77,7 @@ export default function index() {
                 </button>
             </div>
 
-            <div className={globalStyles.navbar}>
-                <h1 style={globalStyles.tallyRight}>Correct: {tallyRight}</h1>
-                <h1 style={globalStyles.tallyWrong}>Incorrect {tallyWrong}</h1>
-            </div>
+
 
         </div>
     )
