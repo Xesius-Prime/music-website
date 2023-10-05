@@ -8,36 +8,36 @@ export default function NavBar() {
             <ul className={styles.navbar}>
 
                 <Link
-                    href="/practice"
+                    href="/method/practice"
                     className={styles.navbarInstance}>
                     Practice
                 </Link>
 
                 <Link
-                    href="/instruments"
+                    href="/method/instruments"
                     className={styles.navbarInstance}>
                     Instruments
                 </Link>
 
                 <Link
-                    href="/rhythm"
+                    href="/method/rhythm"
                     className={styles.navbarInstance}>
                     Rhythm
                 </Link>
 
                 <Link
-                    href="/theory"
+                    href="/method/theory"
                     className={styles.navbarInstance}>
                     Theory
                 </Link>
 
                 <Link
-                    href="/misc"
+                    href="/method/misc"
                     className={styles.navbarInstance}>
                     Misc
                 </Link>
                 <Link
-                    href="/tools"
+                    href="/method/tools"
                     className={styles.navbarInstance}>
                     Tools
                 </Link>

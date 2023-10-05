@@ -163,3 +163,8 @@
 .titleDividerBackground {
   background-color: rgb(72, 0, 0);
 }
+
+.padText {
+  padding-left: 7%;
+  padding-right: 7%;
+}

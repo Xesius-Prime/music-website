@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <div className={styles.center}> <br />
 
       <Link href="/">
-        <h1 className={localStyle.title}>The Method <br />Devonshire Music</h1>
+        <h1 className={localStyle.title}>Devonshire Music <br />William</h1>
       </Link>
 
       <NavBar />

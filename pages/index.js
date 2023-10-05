@@ -14,6 +14,8 @@ export default function Home() {
         suppressHydrationWarning={true}
       />
 
+      <p>Welcome to my website!</p>
+
       <p>This website is a music method, <br /> compiled by: William Devonshire, to help teach music ideas.</p>
 
     </div>
