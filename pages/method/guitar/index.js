@@ -19,6 +19,10 @@ export default function index() {
             href: "/method/guitar/stringRecognition"
         },
         {
+            name: "Dexterity Exercises",
+            href: "/method/guitar/dexterityExercises"
+        },
+        {
             name: "Finger Names",
             href: "/method/guitar/fingerRecognition"
         },

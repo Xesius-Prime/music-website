@@ -35,7 +35,9 @@ export default function index() {
 
     return (
         <div className={globalStyles.center}>
-            <h1>String Recognition</h1><br /><br />
+            <h1>Ukulele</h1>
+
+            <h2>String Recognition <br />Game</h2><br /><br />
 
             <Image
                 src={randomStringPic}

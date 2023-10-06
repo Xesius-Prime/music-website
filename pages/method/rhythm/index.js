@@ -1,16 +1,23 @@
 import React from 'react';
 import Link from "next/link";
 import Image from 'next/image';
-import styles from '../../../styles/Home.module.css'
+import globalStyle from '../../../styles/Home.module.css'
 
 export default function index() {
     return (
         <div>
             <h1>Rhythm</h1><br />
 
-            <img src='https://www.soundpiper.com/elements/image102.gif' alt="Description of the image" />
+            <Image
+                src='/Rhythm/rhythm tree white.png'
+                width={300}
+                height={300}
+                alt="Picture Test"
+                className={globalStyle.image2}
+                suppressHydrationWarning={true}
+            />
 
-            <ul className={styles.leftAlign}>
+            <ul className={globalStyle.leftAlign}>
 
                 <li>
                     <Link

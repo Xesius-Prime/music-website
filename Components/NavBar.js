@@ -20,6 +20,12 @@ export default function NavBar() {
                 </Link>
 
                 <Link
+                    href="/method/teaching"
+                    className={styles.navbarInstance}>
+                    Teaching
+                </Link>
+
+                <Link
                     href="/method/rhythm"
                     className={styles.navbarInstance}>
                     Rhythm
@@ -36,6 +42,7 @@ export default function NavBar() {
                     className={styles.navbarInstance}>
                     Misc
                 </Link>
+
                 <Link
                     href="/method/tools"
                     className={styles.navbarInstance}>

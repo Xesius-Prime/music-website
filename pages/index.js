@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div className={styles.center}>
 
+      <h1>Welcome to my website!</h1>
       <Image
         src='/music website main page.png'
         width={300}
@@ -14,9 +15,14 @@ export default function Home() {
         suppressHydrationWarning={true}
       />
 
-      <p>Welcome to my website!</p>
-
-      <p>This website is a music method, <br /> compiled by: William Devonshire, to help teach music ideas.</p>
+      <div className={styles.leftAlign}>
+        <p>This site wil contain many aspects of my music.</p>
+        <p>
+          1. The Method <br />
+          2. My Compositions & Productions <br />
+          3. Performance Stuff for Shows
+        </p>
+      </div>
 
     </div>
   )
