@@ -18,6 +18,13 @@ export default function index() {
                 </li>
             </ul>
 
+            <h2>Why Master Practice?</h2>
+            <div className={globalStyle.leftAlign}>
+                <p>Because:</p>
+                <p>1. It's the <b>MOST IMPORTANT THING.</b> <br /> Without practice there is no progress.</p>
+            </div>
+            <br />
+
             <h2>Most Important Thing</h2>
             <img src="https://judimoreo.com/wordpress/wp-content/uploads/2015/02/important.jpg" alt="" />
             <div className={globalStyle.leftAlign}>
@@ -25,9 +32,10 @@ export default function index() {
                 <p>I thought "what is the most important thing?", and then I figured it out.</p>
                 <p>Practice is the most important thing!</p>
                 <p>Practice is the foundation that everything else in your music rests on. <b>Without practice, there is no progress.</b></p>
-                <p>Practice comes in many forms. <br />
-                    1. If you are just jamming and playing around with your friends, THATS STILL PRACTICE. <br />
-                    2. If you are playing the 01234 exercise 5 times every time your character dies on a video game, THATS STILL PRACTICE. <br />3. If you are laying in bed imagining yourself playing a scale or a song, THATS STILL PRACTICE!</p>
+                <p>Practice comes in many forms: <br />
+                    1. Just jamming and playing music with your friends, <br /> THATS PRACTICE.</p>
+                <p>2. Playing something every time your character dies on a video game, <br /> THATS PRACTICE.</p>
+                <p>3. Laying in bed imagining yourself playing a scale or a song, <br /> THAT IS PRACTICE!</p>
 
                 <p>We will go over all the different ways of practicing.</p>
             </div><br />
@@ -73,9 +81,12 @@ export default function index() {
                 <h3>1. Didnt have the time</h3>
                 <p>Did you have time to play video games?</p>
                 <p>Everyone has time for at least 1 minute each day.</p>
-                <p>If you want to master anything in music, the main thing you should master is not even your instrument.</p>
-                <p>The main thing you should master is a consistent practice ritual.</p>
+                <p>If you want to master anything in music, the main thing you should master is not even your instrument! Weird eh?</p>
+                <p>The main thing you should master is: <br />
+                    <b>a consistent practice ritual.</b></p>
             </div><br />
+
+
 
             <h2>Tips to Help You Practice</h2>
 
