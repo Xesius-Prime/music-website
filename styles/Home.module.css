@@ -40,7 +40,9 @@
 
 .leftAlign {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 27%;
+  padding-right: 27%;
+
 }
 
 .image {
