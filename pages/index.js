@@ -24,26 +24,23 @@ export default function Home() {
         <h2>1. The Method</h2>
         <img src="https://i.ytimg.com/vi/bANjQqUVgvM/maxresdefault.jpg" alt="" />
       </Link>
-      <div className={styles.leftAlign}>
-        <p>A EPIC ADVENTURES for teaching musical concepts!</p>
-      </div><br />
+      <p>A EPIC ADVENTURES <br /> for teaching musical concepts!</p>
+      <br />
 
 
       <Link href="/">
         <h2>2. Compositions & Productions</h2>
         <img src="https://d15fwz9jg1iq5f.cloudfront.net/wp-content/uploads/2017/02/21162709/03-Baroque.png" alt="" />
       </Link>
-      <div className={styles.leftAlign}>
-        <p>A library of all Williams compositions and various productions.</p><br />
-      </div>
+      <p>A library of all Williams compositions <br /> and various productions.</p><br />
+
 
       <Link href="/">
         <h2>3. Performance</h2>
         <img src="https://static01.nyt.com/images/2021/05/28/arts/27classical-streaming3/merlin_128991608_3bbd52b0-0e18-41be-b604-9bd43b647df3-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="" />
       </Link>
-      <div className={styles.leftAlign}>
-        <p>Information regarding my live performances.</p>
-      </div>
+      <p>Information regarding <br /> Williams live performances.</p><br /><br /><br />
+
 
     </div>
   )

@@ -34,7 +34,7 @@ export default function index() {
             <div className={globalStyle.leftAlign}>
                 <p>By helping your students learn the basics, it will help solidify and master the basics for you.</p>
                 <p>The basics at a high level of mastery is quite powerful.</p>
-                <p>For instance, when I started teaching piano, I wasn't the best with quick note recognition, but now that I've taught the basics day in and day out to so many students over the years, now those notes are mastered.</p>
+                <p>For instance, when I started teaching piano, I wasn't the best with quick note recognition, but now that I've taught the basics day in and day out to so many students over the years, now those notes are mastered, and I can sight read much quicker.</p>
             </div>
 
             <h3>4. Teach Online via Zoom</h3>
