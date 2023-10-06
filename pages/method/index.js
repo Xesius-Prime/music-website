@@ -15,10 +15,8 @@ export default function Home() {
                 className={globalStyle.image2}
                 suppressHydrationWarning={true}
             />
-            <div className={globalStyle.padText}>
-                <p>I should make an introductory video welcoming people to the site and explaining all the important things about it, but first I should probably make the text script.</p>
-                <p>Welcome to my website!</p>
-                <p>This website is a music method, <br /> compiled by: William Devonshire, to help teach music ideas.</p>
+            <div className={globalStyle.leftAlign}>
+                <p>The Method is a compilation of all my music knowledge, coupled in the most digestible format I can, using videos, games, stories, and general fun.</p>
             </div>
 
 
