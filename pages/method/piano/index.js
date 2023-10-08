@@ -18,6 +18,10 @@ export default function index() {
             name: "Key Recognition",
             href: "/method/piano/keyRecognition"
         },
+        {
+            name: "Improvisation",
+            href: "/method/piano/improvisation"
+        },
     ]
 
     const methodMapped = guitarMethodArray.map((x, i) =>
