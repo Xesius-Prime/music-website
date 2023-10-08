@@ -39,7 +39,9 @@ export default function index() {
             <h1>Improvisation Exercise</h1>
             <h2>C# Minor, Romantic Era</h2> <br />
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MrQrlsDA1G0?si=Aw3fWpLD4RctC73Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className={globalStyle.videoContainer}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MrQrlsDA1G0?si=Aw3fWpLD4RctC73Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
             <h2>Arpeggio<br /> (Left Hand) <br />C# Minor</h2>
 
