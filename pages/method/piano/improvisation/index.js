@@ -37,22 +37,15 @@ export default function index() {
             </ul>
 
             <h1>Improvisation Exercise</h1>
-            <h2>C# Minor, Romantic Era</h2> <br />
+            <h2>C# Minor, Romantic Era</h2>
 
-            <div className={globalStyle.videoContainer}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MrQrlsDA1G0?si=Aw3fWpLD4RctC73Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
-            <h2>Arpeggio<br /> (Left Hand) <br />C# Minor</h2>
-
+            <h3>Arpeggio, C# Minor <br />(Left Hand)</h3>
             <div className={globalStyle.leftAlign}>
                 <p>This is the left hand arpeggio part.</p>
                 <p>Again the numbers represent the recommended fingers.</p>
                 <p>First start by playing the arpeggio with the left hand by itself.</p>
                 <p>It goes 5, 3, 1, 2</p>
-
             </div>
-
             <Image
                 src='/Piano/Arpeggio/Csharpminor Arpeggio Left hand.png'
                 width={300}
@@ -69,16 +62,19 @@ export default function index() {
                 className={globalStyle.image3}
                 suppressHydrationWarning={true}
             />
-
             <div className={globalStyle.leftAlign}>
                 <p>Just above you can see the noation, and the finger suggestion numbers underneath.</p>
+            </div> <br />
+
+            <div className={globalStyle.videoContainer}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6D3bjDVLLAE?si=BQAOiV1SdSLbomsb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
 
 
             <br /> <br /> <br />
 
-            <h2>Scale <br /> (Right Hand) <br />C# Minor</h2>
+            <h3>Scale, C# Minor <br /> (Right Hand)</h3>
 
             <div className={globalStyle.leftAlign}>
                 <p>Here is the C# minor scale.</p>
@@ -111,7 +107,7 @@ export default function index() {
 
             <br /> <br /> <br />
 
-            <h2>Both Hands</h2>
+            <h3>Both Hands</h3>
             <div className={globalStyle.leftAlign}>
                 <p>Once you've played both hands individually, then now try to do both hands together.</p>
                 <p>The left hand plays 5, 3 , 1, 2, so right when the left hand plays it's first note (5), thats when you play a note in the scale with the right hand.</p>
