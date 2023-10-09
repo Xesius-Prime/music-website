@@ -34,7 +34,7 @@ export default function index() {
 
             <ul className={globalStyle.leftAlign}>
                 {methodMapped}
-            </ul>
+            </ul> <br />
 
             <h1>Improvisation Exercise</h1>
             <h2>C# Minor, Romantic Era</h2>
