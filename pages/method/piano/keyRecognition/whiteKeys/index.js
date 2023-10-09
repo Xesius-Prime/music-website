@@ -8,7 +8,7 @@ export default function pianoFingersPractice() {
 
     return (
         <div>
-            <div className={styles.center}>
+            <div>
                 <h1>Piano</h1>
                 <h2>White Key Names <br />Lesson/Game</h2>
 
@@ -21,7 +21,7 @@ export default function pianoFingersPractice() {
                     className={styles.image}
                 />
 
-                <p>__________________________________________</p>
+                <div className={globalStyle.divider}></div>
 
                 <h2>C, D & E</h2>
 
@@ -39,7 +39,8 @@ export default function pianoFingersPractice() {
                 <p>Click this button to practice just C, D & E.</p>
                 <button><a href="https://www.musictheory.net/exercises/keyboard/y8yyyynbyyy">Practice <br /> C, D & E</a></button>
 
-                <p>__________________________________________</p>
+                <div className={globalStyle.divider}></div>
+
 
                 <h2>F, G, A & B</h2>
 
@@ -57,7 +58,8 @@ export default function pianoFingersPractice() {
                 <p>Click this button to practice just C, D & E.</p>
                 <button><a href="https://www.musictheory.net/exercises/keyboard/yadyyynbyyy">Practice <br />F, G, A & B</a></button>
 
-                <p>__________________________________________</p>
+                <div className={globalStyle.divider}></div>
+
 
                 <h2>ALL White Keys</h2>
 
@@ -73,7 +75,8 @@ export default function pianoFingersPractice() {
                 <p>Click this button to practice <br /> all the WHITE KEY names</p>
                 <button><a href="https://www.musictheory.net/exercises/keyboard/y9dyyynbyyy">Practice <br />ALL WHITE KEYS</a></button>
 
-                <p>__________________________________________</p><br /><br />
+                <div className={globalStyle.divider}></div>
+                <br /><br />
 
             </div>
             <div className={globalStyle.flex}>

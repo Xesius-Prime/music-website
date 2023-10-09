@@ -10,7 +10,11 @@ export default function blackKeys() {
             <h1>Piano</h1>
             <h2>Black Keys <br />Lesson</h2>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pD4JPf8_Ta4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={styles.vid}></iframe><br /> <br />
+
+            <div className={globalStyle.videoContainer}>
+                <iframe src="https://www.youtube.com/embed/pD4JPf8_Ta4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><br /><br />
+
 
             <Image
                 src='/Piano/Key Names/black keys 2 and 3.png'

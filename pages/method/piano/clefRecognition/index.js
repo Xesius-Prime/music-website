@@ -10,32 +10,14 @@ const clefPicArray = [
 ]
 
 export default function index() {
-    const [randomClefPic, setRandomClefPic] = useState('/Piano/Clef Pics/trebleclef.jpg');
-    const [tallyRight, setTallyRight] = useState(0);
-    const [tallyWrong, setTallyWrong] = useState(0);
-    const [message, setMessage] = useState('Lets play!');
-
-    const handleCheckAnswer = (selectedClef) => {
-
-        if (randomClefPic === selectedClef) {
-            const randomNumber = Math.floor(Math.random() * 3);
-            setRandomClefPic(clefPicArray[randomNumber]);
-            setTallyRight(prev => prev + 1);
-            setMessage('Correct!')
-
-        } else {
-            setTallyWrong(prev => prev + 1);
-            setMessage('Opps! Try again.')
-        }
-    }
 
 
     return (
         <div className={globalStyle.center}>
-            <div className={globalStyle.divider}>
-                <h1>Piano</h1>
-                <h2>Clef Names <br />Lesson</h2>
-            </div>
+
+            <h1>Piano</h1>
+            <h2>Clef Names <br />Lesson</h2>
+            <div className={globalStyle.divider}></div>
 
             <p>While <b>most instruments have one clef,</b> <br />
                 <b className={globalStyle.blue}>piano has 2 clefs:</b></p> <br />

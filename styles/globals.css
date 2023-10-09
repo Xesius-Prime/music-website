@@ -26,6 +26,8 @@ button {
   color: white;
   background-color: rgb(0, 109, 130);
   height: 66px;
+  border: solid rgb(44, 89, 104);
+  border-radius: 10%;
 }
 
 h1 {
