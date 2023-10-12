@@ -11,6 +11,18 @@ export default function index() {
             href: "/method/theory/whyLearnTheoryOverJustTabs"
         },
         {
+            name: "Semitones and Tones",
+            href: "/method/theory/semitonesAndTones"
+        },
+        {
+            name: "Major 3rd, & Minor 3rd",
+            href: "/method/theory/maj3Min3"
+        },
+        {
+            name: "Why Double Sharps, and Flats?",
+            href: "/method/theory/whyDoubleSharpsAndFlats"
+        },
+        {
             name: "Identify I, IV, V",
             href: "/method/theory/identify145"
         },
