@@ -19,11 +19,7 @@ export default function NavBar() {
                     Instruments
                 </Link>
 
-                <Link
-                    href="/method/teaching"
-                    className={styles.navbarInstance}>
-                    Teaching
-                </Link>
+
 
                 <Link
                     href="/method/rhythm"

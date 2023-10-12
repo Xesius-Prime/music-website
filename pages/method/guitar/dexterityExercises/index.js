@@ -18,6 +18,10 @@ export default function index() {
             name: "01234 321 Exercise",
             href: "/method/guitar/dexterityExercises/01234321Exercise"
         },
+        {
+            name: "Plucking Hand Exercise",
+            href: "/method/guitar/dexterityExercises/pluckingHandExercise"
+        },
 
     ]
 
@@ -38,7 +42,7 @@ export default function index() {
             <h1>Guitar</h1>
             <h2>Dexterity Exercises</h2><br />
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kSV26DTHc6I?si=dukDmXjvLMpkdQkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br /> <br /> <br />
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/kSV26DTHc6I?si=dukDmXjvLMpkdQkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe> <br /> <br /> <br />
 
             <div className={globalStyle.leftAlign}>
                 <ul className={globalStyle.flexColumn}>

@@ -15,6 +15,10 @@ export default function index() {
             href: "/method/guitar/holding"
         },
         {
+            name: "How to Play a Note",
+            href: "/method/guitar/howToPlayANote"
+        },
+        {
             name: "String Names",
             href: "/method/guitar/stringRecognition"
         },
@@ -45,14 +49,10 @@ export default function index() {
     ]
 
     const methodMapped = guitarMethodArray.map((x, i) =>
-        <div>
-            <div className={globalStyle.journey}>
-                <Link
-                    href={x.href}>
-                    {i + 1}. {x.name}
-                </Link>
-            </div>
-        </div>
+        <Link
+            href={x.href}>
+            {i + 1}. {x.name}
+        </Link>
     );
 
 
