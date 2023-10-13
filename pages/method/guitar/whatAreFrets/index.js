@@ -7,26 +7,26 @@ export default function index() {
     return (
         <div>
             <h1>Guitar</h1>
-            <h2>Playing a Note</h2>
+            <h2>What Are Frets?</h2>
             <img src="https://images.ctfassets.net/r1mvpfown1y6/5Z1iOwHI2sqmy8ookEMGgS/9c0f71622b7cc9acb415e0b7510342a9/Notes-hero.jpg" alt="" />
 
             <div className={globalStyle.divider}></div>
 
-            <h2>Use the TIPS of your fingers, <br /> not the flat</h2>
+            <h3>Use the TIPS of your fingers, <br /> not the flat parts.</h3>
             <div className={globalStyle.leftAlign}>
                 <p>Using the very tip is much stronger, than using the flat part of the finger.</p>
             </div>
 
             <div className={globalStyle.divider}></div>
 
-            <h2>Play close to the next fret up</h2>
+            <h3>Play closely to the next fret up.</h3>
             <div className={globalStyle.leftAlign}>
                 <p>Like a guy looking over his fence to talk with his neighbour.</p>
             </div>
 
             <div className={globalStyle.divider}></div>
 
-            <h2>Thumb behind the neck, <br /> not your palm</h2>
+            <h3>Thumb behind the neck, <br /> not your palm</h3>
             <div className={globalStyle.leftAlign}>
                 <p>Like making an OK sign with you finger.</p>
             </div>

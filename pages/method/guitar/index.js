@@ -15,6 +15,10 @@ export default function index() {
             href: "/method/guitar/holding"
         },
         {
+            name: "What Are Frets?",
+            href: "/method/guitar/whatAreFrets"
+        },
+        {
             name: "How to Play a Note",
             href: "/method/guitar/howToPlayANote"
         },
