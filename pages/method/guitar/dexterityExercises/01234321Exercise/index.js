@@ -7,56 +7,7 @@ export default function index() {
     return (
         <div className={globalStyles.center}>
             <h1>Guitar</h1>
-            <h2>Dexterity Exercises</h2>
-            <img src="https://media.istockphoto.com/id/452220267/vector/anime-manga-guitar-player.jpg?s=612x612&w=0&k=20&c=nKNk6WH5itz5CUWj2qEkCjaSRDgfw2RFHPkVJWev6vE=" alt="" />
-            <br /> <br />
-
-            <div className={globalStyles.divider}></div>
-
-
-
-
-
-            <h2>1. Alternate Picking</h2>
-            <p>Choose one string. <br /> <br />Pick Down, Pick Up, <br /> Down, Up, Down, Up, <br />v ^ v ^ v ^ v ^ etc.</p>
-
-            <p>Use metronome to see how fast you're able to pick.</p>
-
-
-            <br />
-
-            <div className={globalStyles.divider}></div><br />
-
-            <h2>2. Finger Picking</h2>
-            <div>
-                <p>Instead of alternate picking with a pick, <br /> you can also use just your fingers, with no pick.</p>
-                <p>On the hand you pluck the strings with <br /> (for most people this is their right hand),</p>
-                <p>you can see in the image below that <br /> Thumb = p, Index = i, Middle = m, Ring = a, and Pinky = c/s</p>
-            </div>
-
-            <Image
-                src='/Guitar/Finger Names/plucking hand finger names guitar.png'
-                width={300}
-                height={300}
-                alt="Picture Test"
-                className={globalStyles.image}
-                suppressHydrationWarning={true}
-            />
-            <p>The reason some have strange names <br /> (ie Thumb = p, <br /> when it would seem more reasonable <br /> for Thumb to = t, not p).</p>
-            <p>This is because the finger names are Portugese.</p>
-            <p>The reason we use Portugese finger names for guitar is because back in the day in Europe, some musicians lived in France, and some in England, and some in Germany, Spain, and Portugal etc etc. </p>
-
-            <p>But the musicians still wanted to be able to play and read each others music, so they seem to have descided that if some country came up with a term, then the others would adopt that term in the language it was discovered in.</p>
-
-            <p>This would keep it so music remained more universal, and not a different music language and terms for each country. And this is why you hear a lot of Italian sounding terms, because Italy was the progenitor of many cultural aspects of Western Europe.</p> <br />
-
-            <div className={globalStyles.divider}></div><br />
-
-            <h2>3. 01234 321 Exercise</h2>
-            <p>Exactly as it sounds.</p>
-            <p>The numbers are both the frets and the fingers you use.</p>
-            <p>01234 is the ASCENT UP the fretboard</p>
-            <p>and the 321 part, is the DESCENT back DOWN the fretboard.</p>
+            <h2>01234 321 Exercise</h2>
 
             <Image
                 src='/Guitar/01234321 Exercise/01234321 Exercise.png'
@@ -66,19 +17,37 @@ export default function index() {
                 className={globalStyles.image}
                 suppressHydrationWarning={true}
             />
+            <br /> <br />
 
-            <p>Do it as slow as you have to to make sure every note is sounding out.</p>
-            <p>You don't want to trip over yourself as you play, <br /> because you don't want to practice mistakes.</p>
+            <div className={globalStyles.divider}></div>
 
-            <p>Though this exercise might seem so easy <br /> that you don't take it seriously, <br /> and might not practice it alot, <br /> becareful you don't fall into that thinking, <br /> because <b>this exercise</b>, though it seems simple <b>is actually basically the very foundation of everything else you do on guitar, in terms of dexterity.</b></p>
+            <div className={globalStyles.leftAlign}>
+                <p>Exactly as it sounds.</p>
+                <p>The numbers are both the frets and the fingers you use.</p>
+                <p>01234 is the ASCENT UP the fretboard</p>
+                <p>and the 321 part, is the DESCENT back DOWN the fretboard.</p>
+            </div>
 
-            <p><b>It's the ATOMIC STRUCTURE of everything else you will do with dexterity on guitar</b> (and similar instruments like bass, ukulele or even violin).</p>
+            <div className={globalStyles.divider}></div>
 
-            <p>There are various levels to this exercise.</p>
 
+            <div className={globalStyles.leftAlign}>
+                <p>Do it as slow as you have to to make sure every note is sounding out.</p>
+                <p>You don't want to trip over yourself as you play, <br /> because you don't want to practice mistakes.</p>
+
+                <p>Though this exercise might seem so easy, that you don't take it seriously, and might not practice it alot, becareful you don't fall into that thinking,</p>
+
+                <p>because <b>this exercise</b>, though it seems simple <b>is actually basically the very foundation of everything else you do on guitar, in terms of dexterity.</b></p>
+
+                <p><b>It's the ATOMIC STRUCTURE of everything else you will do with dexterity on guitar,</b> (and similar instruments like bass, ukulele or even violin).</p>
+
+                <p>There are various levels to this exercise.</p>
+            </div>
+
+            <div className={globalStyles.divider}></div>
 
             <h3>TOP LEVEL!</h3>
-            <p>You will be a master of 01234 321 exercise <br /> when you can do all 3 of these requirements.</p>
+            <p>You will be a master of 01234 321 exercise, <br /> when you can do all 3 of these requirements.</p>
             <p>Start with just doing 1, <br /> and then eventually add the others in.</p>
             <div className={globalStyles.leftAlign}>
 

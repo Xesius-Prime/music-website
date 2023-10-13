@@ -12,7 +12,7 @@ export default function index() {
         },
         {
             name: "Finger Picking",
-            href: "/method/guitar/dexterityExercises/alternatePicking"
+            href: "/method/guitar/dexterityExercises/fingerPicking"
         },
         {
             name: "01234 321 Exercise",
