@@ -229,14 +229,22 @@
   border: solid gold;
 }
 
+.textLessonAd button {
+  width: fit-content;
+}
+
+.normalizeButton {
+  padding: 0%;
+}
+
 .textLessonAd h1 {
   color: gold;
   padding-top: 0%;
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .textLessonAd h2 {
@@ -245,8 +253,8 @@
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 .textLessonAd h3 {
@@ -255,8 +263,8 @@
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .thankYou {

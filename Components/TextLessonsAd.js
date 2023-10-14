@@ -12,7 +12,7 @@ export default function NavBar() {
                 <div className={globalStyle.leftAlign}>
                     <p></p>
                 </div>
-                <button><a href="/method"><h2>Click Here!</h2></a></button>
+                <button><a href="/method"><h2 className={globalStyle.normalizeButton}>Click Here!</h2></a></button>
 
                 <div className={globalStyle.divider}></div>
 
