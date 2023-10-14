@@ -217,6 +217,8 @@
   color: rgb(255, 255, 255);
   padding-top: 0%;
   margin-top: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 
 }
 
@@ -233,6 +235,8 @@
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .textLessonAd h2 {
@@ -241,6 +245,8 @@
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .textLessonAd h3 {
@@ -249,6 +255,8 @@
   margin-top: 0%;
   padding-bottom: 0%;
   margin-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .thankYou {
