@@ -18,6 +18,12 @@ export default function index() {
                 </li>
                 <li>
                     <Link
+                        href="/method/practice/whatShouldYourPracticeLookLike">
+                        What Should Your Practice Look Like?
+                    </Link>
+                </li>
+                <li>
+                    <Link
                         href="/method/practice/practiceSlow">
                         Practice Slow
                     </Link>

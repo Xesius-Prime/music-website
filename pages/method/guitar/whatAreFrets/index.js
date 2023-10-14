@@ -8,28 +8,24 @@ export default function index() {
         <div>
             <h1>Guitar</h1>
             <h2>What Are Frets?</h2>
-            <img src="https://images.ctfassets.net/r1mvpfown1y6/5Z1iOwHI2sqmy8ookEMGgS/9c0f71622b7cc9acb415e0b7510342a9/Notes-hero.jpg" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdNtgshDvHiF3ptIxTkzBErFweaR2fhttOlg&usqp=CAU" alt="" />
 
             <div className={globalStyle.divider}></div>
 
-            <h3>Use the TIPS of your fingers, <br /> not the flat parts.</h3>
+            <h3>Metal Lines on the Guitars Neck Are Frets.</h3>
             <div className={globalStyle.leftAlign}>
-                <p>Using the very tip is much stronger, than using the flat part of the finger.</p>
+                <p>Frets are the metal lines on the guitars neck.</p>
+                <p>Think of the frets as fences, and the space between them is peoples private property.</p>
+                <p>We don't play on the fret itself, but rather right behind the fret, as if the finger was a neighbour peaking over the fence, to his neighbours property to speak with him.</p>
             </div>
 
             <div className={globalStyle.divider}></div>
 
-            <h3>Play closely to the next fret up.</h3>
+            <h3></h3>
             <div className={globalStyle.leftAlign}>
-                <p>Like a guy looking over his fence to talk with his neighbour.</p>
+
             </div>
 
-            <div className={globalStyle.divider}></div>
-
-            <h3>Thumb behind the neck, <br /> not your palm</h3>
-            <div className={globalStyle.leftAlign}>
-                <p>Like making an OK sign with you finger.</p>
-            </div>
             <br /> <br />
 
 

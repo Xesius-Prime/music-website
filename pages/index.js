@@ -19,12 +19,14 @@ export default function Home() {
 
 
       <p>This site will contain many aspects <br /> of William Devonshires music.</p>
+      <div className={globalStyle.divider}></div>
+
 
       <Link href="/method">
         <h2>1. The Method</h2>
         <img src="https://i.ytimg.com/vi/bANjQqUVgvM/maxresdefault.jpg" alt="" />
       </Link>
-      <p>A EPIC ADVENTURES <br /> for teaching musical concepts!</p>
+      <p>EPIC ADVENTURES <br /> for teaching musical concepts!</p>
 
 
       <div className={globalStyle.divider}></div>
@@ -46,8 +48,7 @@ export default function Home() {
       </Link>
       <p>Information regarding <br /> Williams live performances.</p>
 
-      <div className={globalStyle.divider}></div>
-      <br /><br />
+      <br />
 
 
     </div>

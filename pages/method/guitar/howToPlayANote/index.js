@@ -30,6 +30,14 @@ export default function index() {
             <div className={globalStyle.leftAlign}>
                 <p>Like making an OK sign with you finger.</p>
             </div>
+
+            <div className={globalStyle.divider}></div>
+
+            <h2>Pluck the Right String</h2>
+            <div className={globalStyle.leftAlign}>
+                <p>Sometimes beginner students are holding the correct note with their fretting hand, but plucking the wrong string with their plucking hand.</p>
+                <p>If you are still getting that muted sound, then double check your plucking hand to make sure you're plucking the correct string.</p>
+            </div>
             <br /> <br />
 
 

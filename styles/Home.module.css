@@ -205,3 +205,54 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.donate {
+  background-color: rgb(104, 1, 1);
+  padding-top: 20px;
+  padding-bottom: 1px;
+  border: solid lightcoral;
+}
+
+.donate h3 {
+  color: rgb(255, 255, 255);
+  padding-top: 0%;
+  margin-top: 0%;
+
+}
+
+.textLessonAd {
+  background-color: rgb(0, 0, 92);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: solid gold;
+}
+
+.textLessonAd h1 {
+  color: gold;
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.textLessonAd h2 {
+  color: white;
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.textLessonAd h3 {
+  color: rgb(140, 255, 255);
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.thankYou {
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+}
