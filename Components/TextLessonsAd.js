@@ -7,18 +7,16 @@ export default function NavBar() {
         <div>
 
             <div className={globalStyle.textLessonAd}>
-                <h1>Become One of My Students!</h1>
+                <h1>Interested in Lessons with Me?</h1><br />
 
-                <div className={globalStyle.leftAlign}>
-                    <p></p>
-                </div>
-                <button><a href="/method"><h2 className={globalStyle.normalizeButton}>Click Here!</h2></a></button>
+                <h2>I have a <b>highly affordable</b> <br /> new method for teaching, <br /> and theres a <b>free trial!</b></h2><br />
+                <button><a href="/method"><h2 className={globalStyle.normalizeButton}>Click Here!</h2></a></button> <br />
 
                 <div className={globalStyle.divider}></div>
 
                 <h2>The Deal</h2><br />
                 <h3></h3>
-                <h3>Why Choose Our Music Lessons?</h3>
+                <h3>Why Choose Lesson with Me?</h3>
                 <div className={globalStyle.leftAlign}>
                     <p>(Make Video of Content Below)</p><br />
                     <p>Who Am I?:</p>
@@ -51,10 +49,47 @@ export default function NavBar() {
                             - History</p>
                     </div>
                 </div>
-                <br />
 
-                <h3>How Lessons Work</h3>
-                <br />
+                <div className={globalStyle.divider}></div>
+
+                <h3>How Lessons Work:</h3> <br />
+                <div className={globalStyle.leftAlign}>
+                    <h3>1. Assess</h3>
+                    <p>When we first start lessons I must assess the student.</p>
+                    <div className={globalStyle.flex}>
+                        <img src="https://static.wixstatic.com/media/440b2a_a02366df197c490d8d65c34a6ec10699~mv2.jpg/v1/fill/w_682,h_452,al_c,lg_1,q_80,enc_auto/male-doctor-writing-on-medical-document_jpg_s%3D612x612%26w%3D0%26k%3D20%26c%3DDEliLjpb5b9GuMHF3gyS8tLqa.jpg" alt="" />
+                        <p>- What are their goals? <br />
+                            - What's their preferred instrument? <br />
+                            - Do they know anything about <br /> the instrument already? etc etc. </p>
+                    </div>
+
+                    <br />
+
+                    <h3>2. Lesson</h3>
+                    <p>Once I've assessed the student, I will give specific resources, which I think are exactly what they need to progress.</p>
+                    <div className={globalStyle.flex}>
+                        <p>This will be in the form of: <br />
+                            - Conversations with Me<br />
+                            - Texts <br />
+                            - Videos <br />
+                            - Pictures<br />
+                            - PDF Files<br />
+                            - Games <br />
+                            - Etc etc Relevent Resources</p>
+                        <img src="https://st4.depositphotos.com/1782112/40317/i/450/depositphotos_403172532-stock-photo-white-jigsaw-puzzle-pieces-gray.jpg" alt="" />
+                    </div>
+                    <p>Essentially whatever it takes to help the student progress.</p>
+                    <br />
+
+                    <h3>3. Assignment</h3> <br />
+                    <div className={globalStyle.flex}>
+                        <img src="https://static.wixstatic.com/media/440b2a_2b507038de544ddc821eec7bb4e6f2c1~mv2.jpg/v1/crop/x_0,y_0,w_400,h_223/fill/w_460,h_257,al_c,lg_1,q_80,enc_auto/caucasian-woman-playing-guitar-live-on-a-smartphone-the-girl-leads-a-music-video-blog-stoc.jpg" alt="" />
+                        <p>After the student has digested the material I supplied for them in the lessons portion, I then give them an assignment which helps them better understand, further master and solidify their new found knowledge.</p>
+                        <p>This might be in the form of them recording themselves playing a song for instance, and sending it to me so I can see and hear them in action and give more specific feedback.</p>
+                    </div>
+                </div>
+
+                <div className={globalStyle.divider}></div>
 
                 <h3>Testimonial</h3> <br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/iu4uP4aL5E0?si=iaYotmfR64PEdLCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -167,6 +202,6 @@ export default function NavBar() {
                 <br />
             </div>
             <br /> <br /> <br />
-        </div>
+        </div >
     )
 }
