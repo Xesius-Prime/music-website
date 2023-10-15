@@ -92,14 +92,14 @@ export default function NavBar() {
                 <div className={globalStyle.divider}></div>
 
                 <h3>Testimonial</h3> <br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iu4uP4aL5E0?si=iaYotmfR64PEdLCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iu4uP4aL5E0?si=iaYotmfR64PEdLCJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe>
 
 
                 <div className={globalStyle.divider}></div>
 
                 <h2>Why You Need A Teacher</h2>
                 <br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/H-T477uVtl8?si=tgR3Ij4WcmyYw_Kq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H-T477uVtl8?si=tgR3Ij4WcmyYw_Kq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className={globalStyle.video}></iframe>
                 <br /> <br />
                 <h3>It's not absolutely necessary, but...</h3>
                 <div className={globalStyle.leftAlign}>
@@ -202,6 +202,6 @@ export default function NavBar() {
                 <br />
             </div>
             <br /> <br /> <br />
-        </div >
+        </div>
     )
 }
