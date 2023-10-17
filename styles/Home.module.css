@@ -283,12 +283,4 @@
   font-size: large;
 }
 
-.formInput {
-  width: 30%;
-  background-color: red;
-  border: solid white;
-  border-radius: 10%;
-  height: 30px;
-  font-weight: bolder;
-  font-size: large;
-}
+.formInput {}
