@@ -31,6 +31,10 @@ export default function index() {
             href: "/method/guitar/dexterityExercises"
         },
         {
+            name: "Improvisation",
+            href: "/method/guitar/improvisationOnGuitar"
+        },
+        {
             name: "Finger Names",
             href: "/method/guitar/fingerRecognition"
         },
