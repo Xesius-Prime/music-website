@@ -1,9 +1,11 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import { useRouter } from "next/router";
 import globalStyle from '../styles/Home.module.css'
 
 export default function EmailForLessons() {
     const form = useRef();
+    const router = useRouter();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,6 +17,12 @@ export default function EmailForLessons() {
                 console.log(error.text);
             });
     };
+
+    const handleLinkClick = () => {
+
+        router.push("/method/messageSent");
+    };
+
     return (
         <div>
             <form ref={form} onSubmit={sendEmail} >
@@ -24,7 +32,8 @@ export default function EmailForLessons() {
                 <input type="email" name="from_email" /> <br />
                 <label>Message</label> <br />
                 <textarea name="message" className={globalStyle.formInput} /> <br /> <br />
-                <input type="submit" value="Send" className={globalStyle.formBtn} />
+
+                <input type="submit" value="Send" className={globalStyle.formBtn} onClick={handleLinkClick} />
             </form>
         </div>
     )
