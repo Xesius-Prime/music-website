@@ -1,30 +1,35 @@
 import React from 'react'
-import Link from "next/link";
 import globalStyle from '../styles/Home.module.css'
+import EmailForLessons from "../Components/EmailForLessons"
 
-export default function NavBar() {
+export default function TextLessonsAd() {
+
     return (
         <div>
 
-            <div className={globalStyle.textLessonAd}>
+            <div className={globalStyle.textLessonAd}><br />
                 <h1>Interested in Lessons with Me?</h1><br />
 
                 <h2>I have a <b>highly affordable</b> <br /> new method for teaching, <br /> and theres a <b>free trial!</b></h2><br />
-                <button><a href="/method"><h2 className={globalStyle.normalizeButton}>Click Here!</h2></a></button> <br />
+
+                <h2>Send me a message!</h2>
+
+                <EmailForLessons />
 
                 <div className={globalStyle.divider}></div>
 
                 <h2>The Deal</h2><br />
                 <h3></h3>
-                <h3>Why Choose Lesson with Me?</h3>
+                <h3>Why Choose Lessons with Me?</h3>
                 <div className={globalStyle.leftAlign}>
                     <p>(Make Video of Content Below)</p><br />
                     <p>Who Am I?:</p>
-                    <p>- Grade 8 Guitar, Grade 6 Piano, and Grade 9 Theory all with the Royal Conservatory of Music</p>
-                    <p>- 14 Years of Teaching Experience</p>
-                    <p>- Guided Hundreds of Students from Complete Beginner to Advanced Levels</p>
-                    <p>- Prolific Composer, Song-Writer, and Berklee Graduate for Music Production</p>
-                    <p>- Professional Performing Artist</p>
+                    <p>Hello! Nice to meet you, my name is William Devonshire. :)</p>
+                    <p>- I've Obtained My Grade 8 Guitar, Grade 6 Piano, and Grade 9 Theory all with the Royal Conservatory of Music.</p>
+                    <p>- I Have 14 Years of Teaching Experience.</p>
+                    <p>- I've Guided Hundreds of Students from Complete Beginner to Highly Advanced Levels.</p>
+                    <p>- I'm a Prolific Composer, Song-Writer, and Berklee Graduate for Music Production.</p>
+                    <p>- and a Professional Performing Artist, Playing Cafes, Pubs, Private Parties and Restaurants.</p>
                 </div>
 
                 <br />
