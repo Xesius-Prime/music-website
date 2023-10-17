@@ -7,14 +7,16 @@ export default function TextLessonsAd() {
     return (
         <div>
 
-            <div className={globalStyle.textLessonAd}><br />
-                <h1>Interested in Lessons with Me?</h1><br />
+            <div className={globalStyle.textLessonAd}><br /> <br />
+                <h1>Interested in Lessons with Me?</h1><br /> <br />
 
-                <h2>I have a <b>highly affordable</b> <br /> new method for teaching, <br /> and theres a <b>free trial!</b></h2><br />
+                <h2>I have a <b>highly affordable</b> <br /> new method for teaching, <br /> and theres a <b>free trial!</b></h2><br /> <br />
 
                 <h2>Send me a message!</h2>
+                <br /> <br />
 
                 <EmailForLessons />
+                <br /> <br />
 
                 <div className={globalStyle.divider}></div>
 

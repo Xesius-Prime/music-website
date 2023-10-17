@@ -19,7 +19,6 @@ export default function EmailForLessons() {
     };
 
     const handleLinkClick = () => {
-
         router.push("/method/messageSent");
     };
 
@@ -32,7 +31,6 @@ export default function EmailForLessons() {
                 <input type="email" name="from_email" /> <br />
                 <label>Message</label> <br />
                 <textarea name="message" className={globalStyle.formInput} /> <br /> <br />
-
                 <input type="submit" value="Send" className={globalStyle.formBtn} onClick={handleLinkClick} />
             </form>
         </div>
