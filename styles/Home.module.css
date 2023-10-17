@@ -283,4 +283,6 @@
   font-size: large;
 }
 
-.formInput {}
+.formInput {
+  color: black;
+}
