@@ -19,9 +19,9 @@ export default function EmailForLessons() {
         <div>
             <form ref={form} onSubmit={sendEmail} >
                 <label>Name</label> <br />
-                <input type="text" name="user_name" /> <br />
+                <input type="text" name="from_name" /> <br />
                 <label>Email</label> <br />
-                <input type="email" name="user_email" /> <br />
+                <input type="email" name="from_email" /> <br />
                 <label>Message</label> <br />
                 <textarea name="message" className={globalStyle.formInput} /> <br /> <br />
                 <input type="submit" value="Send" className={globalStyle.formBtn} />
