@@ -292,3 +292,24 @@
   color: aqua;
   text-decoration: underline;
 }
+
+.mainFocus {
+  border: groove rgb(126, 53, 194);
+  margin-left: 3%;
+  margin-right: 3%;
+  border-style: ridge;
+}
+
+.greenBorder {
+  border: groove rgb(8, 142, 8);
+  margin-left: 3%;
+  margin-right: 3%;
+  border-style: ridge;
+}
+
+.goldBorder {
+  border: groove gold;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-style: ridge;
+}
