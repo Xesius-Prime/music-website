@@ -287,3 +287,8 @@
   color: black;
   background-color: white;
 }
+
+.highlightAndUnderline {
+  color: aqua;
+  text-decoration: underline;
+}

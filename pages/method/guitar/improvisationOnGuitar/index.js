@@ -12,7 +12,7 @@ export default function index() {
 
             <div className={globalStyle.divider}></div>
 
-            <h2>Notes in A minor Key Signature</h2>
+            <h2>Notes in A minor key signature scale</h2>
             <Image
                 src='/Guitar/Improvisation/amin notes in keysignature scale for guitar.png'
                 width={300}
