@@ -19,6 +19,10 @@ export default function index() {
             href: "/method/piano/keyRecognition"
         },
         {
+            name: "Notation",
+            href: "/method/piano/notation"
+        },
+        {
             name: "Improvisation",
             href: "/method/piano/improvisation"
         },

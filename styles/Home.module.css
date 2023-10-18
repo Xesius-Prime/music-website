@@ -298,6 +298,7 @@
   margin-left: 3%;
   margin-right: 3%;
   border-style: ridge;
+
 }
 
 .greenBorder {
@@ -305,6 +306,7 @@
   margin-left: 3%;
   margin-right: 3%;
   border-style: ridge;
+  border-radius: 10%;
 }
 
 .goldBorder {
