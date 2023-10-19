@@ -16,33 +16,36 @@ export default function Home() {
       <div className={globalStyle.divider}></div>
 
 
-      <Link href="/method">
-        <h2>1. The Method</h2>
-        <img src="https://i.ytimg.com/vi/bANjQqUVgvM/maxresdefault.jpg" alt="" />
-      </Link>
-      <p>EPIC ADVENTURES <br /> for teaching musical concepts!</p>
-
-
-      <div className={globalStyle.divider}></div>
-
-
-      <Link href="/">
-        <h2>2. Compositions & Productions</h2>
-        <img src="https://d15fwz9jg1iq5f.cloudfront.net/wp-content/uploads/2017/02/21162709/03-Baroque.png" alt="" />
-      </Link>
-      <p>A library of all Williams compositions <br /> and various productions.</p>
-
-      <div className={globalStyle.divider}></div>
+      <div className={globalStyle.flex}>
+        <div>
+          <Link href="/method">
+            <h2>Music Lessons</h2>
+            <img src="https://cdn.musichouseschool.com/VirtualPianoLessons.jpg" alt="" />
+          </Link>
+          <p>EPIC ADVENTURES <br /> for teaching musical concepts!</p>
+        </div>
 
 
 
-      <Link href="/">
-        <h2>3. Performance</h2>
-        <img src="https://static01.nyt.com/images/2021/05/28/arts/27classical-streaming3/merlin_128991608_3bbd52b0-0e18-41be-b604-9bd43b647df3-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="" />
-      </Link>
-      <p>Information regarding <br /> Williams live performances.</p>
+        <div>
+          <Link href="/">
+            <h2>Compositions & Productions</h2>
+            <img src="https://media.output.com/app/uploads/2021/07/STUDIO_CO_IMAGE-1-16-9.jpg?auto=format,compress" alt="" />
+          </Link>
+          <p>A library of all Williams compositions <br /> and various productions.</p>
+        </div>
 
-      <br />
+
+
+        <div>
+          <Link href="/">
+            <h2>Performance</h2>
+            <img src="https://media.istockphoto.com/id/1185599903/photo/guitar-player-in-a-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=Jl6ZyX-7HxblpdpcHLHCGhXlN8SzmoG4YP01aHrh0vc=" alt="" />
+          </Link>
+          <p>Information regarding <br /> Williams live performances.</p>
+        </div>
+
+      </div>
 
 
     </div>

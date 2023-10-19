@@ -207,10 +207,13 @@
 }
 
 .donate {
-  background-color: rgb(104, 1, 1);
+  background: linear-gradient(to top, rgb(139, 0, 0), rgb(0, 0, 0));
+  border-radius: 20%;
   padding-top: 20px;
   padding-bottom: 1px;
-  border: solid lightcoral;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: solid rgb(171, 130, 27);
 }
 
 .donate h3 {
@@ -223,10 +226,12 @@
 }
 
 .textLessonAd {
-  background-color: rgb(0, 0, 92);
+  background-color: rgb(0, 0, 70);
   padding-top: 7px;
   padding-bottom: 7px;
   border: solid gold;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .textLessonAd button {
@@ -248,7 +253,7 @@
 }
 
 .textLessonAd h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   padding-top: 0%;
   margin-top: 0%;
   padding-bottom: 0%;
@@ -265,6 +270,10 @@
   margin-bottom: 0%;
   padding-left: 7%;
   padding-right: 7%;
+}
+
+.textLessonAd p {
+  color: #ffffff;
 }
 
 .thankYou {
@@ -315,3 +324,11 @@
   margin-right: 3%;
   border-style: ridge;
 }
+
+.indentOne {
+  background-color: rgb(45, 25, 0);
+  margin-left: 5%;
+  padding: 3%;
+}
+
+.indentOne h3 {}
