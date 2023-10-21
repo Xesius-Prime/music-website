@@ -16,8 +16,9 @@ function MyApp({ Component, pageProps }) {
 
 
       <NavBar />
-      <Donate />
 
+
+      <Donate />
       <Component {...pageProps} /><br /> <br /> <br />
       <TextLessonAd />
     </div>
