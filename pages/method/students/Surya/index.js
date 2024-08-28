@@ -6,6 +6,16 @@ function index() {
         <div>
             <h1>Surya</h1>
 
+            <h2>Oct 30 2023</h2>
+            <div className={globalStyle.leftAlign}>
+                <h3>General Overview:</h3>
+                <p>- Mattaeo Carcassi</p>
+                <br />
+
+            </div>
+
+            <div className={globalStyle.divider}></div>
+
             <h2>Oct 16 2023</h2>
             <div className={globalStyle.leftAlign}>
                 <h3>General Overview:</h3>

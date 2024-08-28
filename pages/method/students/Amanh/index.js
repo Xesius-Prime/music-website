@@ -11,7 +11,7 @@ function index() {
                 <h2>Main Focus:</h2>
                 <div className={globalStyle.leftAlign}>
                     <p>1. Practice Pieces, (especially Spider man for the challenge of two notes).</p>
-                    <p>2. Practice <a className={globalStyle.highlightAndUnderline} href="/method/guitar/improvisationOnGuitar">the notes in A minor scale</a>.</p>
+                    <p>2. Practice <a className={globalStyle.highlightAndUnderline} href="/method/guitar/improvisationOnGuitar">the notes in A minor scale</a>, and use the metronome, so you can track your progress.</p>
                 </div>
                 <br />
             </div>
@@ -25,7 +25,12 @@ function index() {
                     <br />
 
                     <h3>Book:</h3>
-                    <p>Nothing yet. Likely we'll start with Piano Adventure Book 1</p>
+                    <p>Just tab pieces to build dexterity and some sight reading.</p>
+                    <br />
+
+                    <h3>Natural Note Scale:</h3>
+                    <p>60 bpm, 70% complete, <br />- needs to work on no mistakes, and <br />- doing it with the correct fingers.</p>
+
                 </div>
                 <br />
             </div>
@@ -34,6 +39,15 @@ function index() {
 
             <div className={globalStyle.greenBorder}>
                 <h1>Individual Lessons</h1>
+
+                <div className={globalStyle.divider}></div>
+                <h2>Oct 24 2023</h2>
+
+                <div className={globalStyle.leftAlign}>
+                    <h3>Overview:</h3>
+                    <p></p>
+                    <br />
+                </div>
 
                 <div className={globalStyle.divider}></div>
                 <h2>Oct 17 2023</h2>
@@ -55,6 +69,7 @@ function index() {
 
                     <h3>Misc:</h3>
                     <p></p>
+                    <br />
                 </div>
             </div>
         </div>

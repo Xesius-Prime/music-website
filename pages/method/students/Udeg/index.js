@@ -6,6 +6,22 @@ function index() {
         <div>
             <h1>Udeg</h1>
 
+            <h2>Nov 6 2023</h2>
+            <div className={globalStyle.leftAlign}>
+                <h3>General Overview:</h3>
+                <p>- Matteo Carcassi & Sweet Child O Mine</p>
+                <p>- Chord and Scale Improvisation in the Key of A minor</p>
+                <p>- Note recognition</p>
+
+            </div>
+            <h2>Oct 30 2023</h2>
+            <div className={globalStyle.leftAlign}>
+                <h3>General Overview:</h3>
+                <p>- Hes been practicing dexterity exercises.</p>
+                <p>Hammer ons</p>
+
+            </div>
+
             <h2>Oct 16 2023</h2>
             <div className={globalStyle.leftAlign}>
                 <h3>General Overview:</h3>

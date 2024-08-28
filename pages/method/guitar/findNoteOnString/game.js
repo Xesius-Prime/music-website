@@ -174,9 +174,9 @@ export default function index() {
                         <button onClick={() => handleNoteClick(B7OnB)} className={styles.button}></button>
                         <button onClick={() => handleNoteClick(B8OnB)} className={styles.button}></button>
                         <button onClick={() => handleNoteClick(B9OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B10nB)} className={styles.button}></button>
+                        <button onClick={() => handleNoteClick(B10OnB)} className={styles.button}></button>
                         <button onClick={() => handleNoteClick(B11OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B12OnB)} className={styles.button}></button>
+                        <button onClick={() => handleNoteClick(BOnB)} className={styles.button}></button>
                     </div>
                     <div className={styles.buttonFill}>
                         <button onClick={() => handleNoteClick(GOnG)} className={styles.button}>open</button>

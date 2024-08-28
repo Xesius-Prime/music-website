@@ -6,6 +6,46 @@ function index() {
         <div>
             <h1>Edwin</h1>
 
+            <h2>Oct 31 2023</h2>
+
+            <h3>Practiced:</h3>
+            <div className={globalStyle.leftAlign}>
+                <p>- Starwars theme</p>
+                <p>- Iron man</p>
+                <p>- Chords</p>
+            </div>
+            <br />
+
+            <p>He worked on all his stuff, but was a bit busy.</p>
+            <p>I showed him how to find the note names on each string, and we worked on Amin and Dmin chords.</p>
+            <br />
+
+            <div className={globalStyle.divider}></div>
+            <h2>Oct 24 2023</h2>
+
+            <h3>Practice:</h3>
+            <div className={globalStyle.leftAlign}>
+                <p>- Mostly working on starwars theme</p>
+                <p></p>
+                <p></p>
+            </div>
+            <br />
+
+            <h3>Pieces:</h3>
+            <div className={globalStyle.leftAlign}>
+                <h3></h3>
+                <p></p>
+            </div>
+            <br />
+
+            <h3>Technique/ Dexterity:</h3>
+            <div className={globalStyle.leftAlign}>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div className={globalStyle.divider}></div>
+
             <h2>Oct 17 2023</h2>
 
             <h3>Practice:</h3>

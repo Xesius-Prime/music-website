@@ -10,8 +10,8 @@ function index() {
             <div className={globalStyle.mainFocus}>
                 <h2>Main Focus</h2>
                 <div className={globalStyle.leftAlign}>
-                    <p>1. Working on Auld Lang Syne.</p>
-                    <p>2. Interval Recognition.</p>
+                    <p>1. Piece Sakura.</p>
+                    <p>2. <a className={globalStyle.highlightAndUnderline} href="https://www.musictheory.net/exercises/interval">Interval Recognition</a>.</p>
                 </div>
             </div>
             <br />
@@ -31,6 +31,27 @@ function index() {
             <br /> <br />
 
             <div className={globalStyle.greenBorder}>
+                <h2>Nov 1 2023</h2>
+                <div className={globalStyle.leftAlign}>
+                    <h3>:</h3>
+                </div>
+
+
+                <div className={globalStyle.divider}></div>
+
+
+                <h2>Oct 25 2023</h2>
+                <div className={globalStyle.leftAlign}>
+                    <h3>:</h3>
+                    <p>- Completed old book with Auld Lang Syne, and now onto new book with Sakura.</p>
+                    <p>- Don't be fooled by when it moves positions. Follow the note more than the finger suggestion.</p>
+                    <p>- Needs to work on interval recognition.</p>
+                </div>
+
+
+                <div className={globalStyle.divider}></div>
+
+
                 <h2>Oct 18 2023</h2>
                 <div className={globalStyle.leftAlign}>
                     <h3>Pieces:</h3>
