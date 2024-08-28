@@ -8,7 +8,7 @@ export default function Home() {
     <div>
 
       <h1>Welcome to My Website!</h1> <br />
-      <img src="https://static.wixstatic.com/media/440b2a_fefb40dd6b734cca91503f03ece9c696~mv2.png/v1/crop/x_0,y_36,w_369,h_375/fill/w_516,h_525,al_c,lg_1,q_85,enc_auto/Untitled%20design.png" alt="" />
+      <img src="https://static.wixstatic.com/media/440b2a_44d67416aaa948498fe7d51ca3b80e33~mv2.jpg/v1/crop/x_0,y_0,w_548,h_643/fill/w_506,h_592,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2b0935d6650f47e786da6c05ab9a029a_edited.jpg" alt="" />
 
 
       <p>This site will contain the many aspects <br /> of William Devonshires music career.</p>
