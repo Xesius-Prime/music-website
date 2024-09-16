@@ -15,6 +15,10 @@ export default function index() {
             href: "/method/piano/clefRecognition"
         },
         {
+            name: "Note Group Recognition",
+            href: "/method/piano/noteGroupGame"
+        },
+        {
             name: "Key Recognition",
             href: "/method/piano/keyRecognition"
         },

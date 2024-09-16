@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 
       <Donate />
       <Component {...pageProps} /><br /> <br /> <br />
-
+      <TextLessonAd />
     </div>
   )
 }
