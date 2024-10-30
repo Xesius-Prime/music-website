@@ -89,6 +89,9 @@ export default function index() {
     const [tallyRight, setTallyRight] = useState(0);
     const [tallyWrong, setTallyWrong] = useState(0);
 
+    const [mode, setMode] = useState('results'); // 'practice', 'challenge', 'results'
+    const [challengeTimeLeft, setChallengeTimeLeft] = useState(60);
+
     const noteArray = [
         EOnLilE, E1OnLilE, E2OnLilE, E3OnLilE, E4OnLilE, E5OnLilE, E6OnLilE, E7OnLilE, E8OnLilE, E9OnLilE, E10OnLilE, E11OnLilE,
         BOnB, B1OnB, B2OnB, B3OnB, B4OnB, B5OnB, B6OnB, B7OnB, B8OnB, B9OnB, B10OnB, B11OnB,
@@ -98,19 +101,61 @@ export default function index() {
         EOnE, E1OnE, E2OnE, E3OnE, E4OnE, E5OnE, E6OnE, E7OnE, E8OnE, E9OnE, E10OnE, E11OnE,
     ]
 
-    const handleNoteClick = (selectedNote) => {
-        if (currentQuestion === selectedNote) {
-
-            const randomNumber = Math.floor(Math.random() * noteArray.length);
-            console.log(randomNumber);
-
-            setCurrentQuestion(noteArray[randomNumber]);
-
-            setTallyRight(prev => prev + 1);
-
-        } else {
-            setTallyWrong(prev => prev + 1);
+    useEffect(() => {
+        // Timer logic for challenge mode
+        if (mode === 'challenge') {
+            const timer = setInterval(() => {
+                setChallengeTimeLeft(prev => {
+                    if (prev <= 1) {
+                        clearInterval(timer);
+                        setMode('results'); // Switch to results mode when time is up
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 1000);
+            return () => clearInterval(timer);
         }
+    }, [mode]);
+
+    const handleNoteClick = (selectedNote) => {
+        if (mode === 'practice') {
+            if (currentQuestion === selectedNote) {
+                const randomNumber = Math.floor(Math.random() * noteArray.length);
+                setCurrentQuestion(noteArray[randomNumber]);
+                setTallyRight(prev => prev + 1);
+            } else {
+                setTallyWrong(prev => prev + 1);
+            }
+        } else if (mode === 'challenge') {
+            // Handle clicks in challenge mode (same as practice)
+            if (currentQuestion === selectedNote) {
+                const randomNumber = Math.floor(Math.random() * noteArray.length);
+                setCurrentQuestion(noteArray[randomNumber]);
+                setTallyRight(prev => prev + 1);
+            } else {
+                setTallyWrong(prev => prev + 1);
+            }
+        }
+    };
+
+    const handleStartChallenge = () => {
+        setMode('challenge');
+    };
+
+    const startChallenge = () => {
+        setTallyRight(0);
+        setTallyWrong(0);
+        setChallengeTimeLeft(60);
+        setCurrentQuestion(noteArray[Math.floor(Math.random() * noteArray.length)]);
+        setMode('challenge');
+    };
+
+    const handlePlayAgain = () => {
+        setTallyRight(0);
+        setTallyWrong(0);
+        setMode('practice');
+        setCurrentQuestion(noteArray[Math.floor(Math.random() * noteArray.length)]);
     };
 
     useEffect(() => {
@@ -131,115 +176,227 @@ export default function index() {
     return (
         <div>
             <div className={styles.main}>
-
                 <h1>Guitar</h1>
-
                 <h2>Find Note On String <br /> Game</h2>
 
-                <h1>{currentQuestion}</h1>
+                {mode === 'practice' && (
+                    <div>
+                        <h1>{currentQuestion}</h1>
+                        <div className={styles.topPart1}>
+                            <div className={styles.topPart2}>
+                                <h1 className={styles.green}>{tallyRight}</h1>
+                                <h1 className={styles.red}>{tallyWrong}</h1>
+                            </div>
+                        </div>
+                        <div className={styles.bottomPart}>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(E1OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E2OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E3OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E4OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E5OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E6OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E7OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E8OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E9OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E10OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E11OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(BOnB)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(B1OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B2OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B3OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B4OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B5OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B6OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B7OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B8OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B9OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B10OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B11OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(BOnB)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(GOnG)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(G1OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G2OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G3OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G4OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G5OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G6OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G7OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G8OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G9OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G10OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G11OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(GOnG)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(D1OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D2OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D3OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D4OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D5OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D6OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D7OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D8OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D9OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D10OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D11OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>O <br /> O</button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(AOnA)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(A1OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A2OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A3OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A4OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A5OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A6OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A7OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A8OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A9OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A10OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A11OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(AOnA)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(EOnE)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(E1OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E2OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E3OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E4OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E5OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E6OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E7OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E8OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E9OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E10OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E11OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(EOnE)} className={styles.button}></button>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
-                <div className={styles.topPart1}>
-                    <div className={styles.topPart2}>
-                        <h1 className={styles.green}>{tallyRight}</h1>
-                        <h1 className={styles.red}>{tallyWrong}</h1>
-                    </div>
-                </div>
+                {mode === 'challenge' && (
+                    <div>
+                        <h1>{currentQuestion}</h1>
+                        <h2>Time left: {challengeTimeLeft} seconds</h2>
+                        <div className={styles.bottomPart}>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(E1OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E2OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E3OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E4OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E5OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E6OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E7OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E8OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E9OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E10OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E11OnLilE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(BOnB)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(B1OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B2OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B3OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B4OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B5OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B6OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B7OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B8OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B9OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B10OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(B11OnB)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(BOnB)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(GOnG)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(G1OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G2OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G3OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G4OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G5OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G6OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G7OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G8OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G9OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G10OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(G11OnG)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(GOnG)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(D1OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D2OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D3OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D4OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D5OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D6OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D7OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D8OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D9OnD)} className={styles.button}>O</button>
+                                <button onClick={() => handleNoteClick(D10OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(D11OnD)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>O <br /> O</button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(AOnA)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(A1OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A2OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A3OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A4OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A5OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A6OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A7OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A8OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A9OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A10OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(A11OnA)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(AOnA)} className={styles.button}></button>
+                            </div>
+                            <div className={styles.buttonFill}>
+                                <button onClick={() => handleNoteClick(EOnE)} className={styles.button}>open</button>
+                                <button onClick={() => handleNoteClick(E1OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E2OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E3OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E4OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E5OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E6OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E7OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E8OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E9OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E10OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(E11OnE)} className={styles.button}></button>
+                                <button onClick={() => handleNoteClick(EOnE)} className={styles.button}></button>
+                            </div>
 
+                        </div>
+                    </div>
+                )}
 
+                {mode === 'results' && (
+                    <div>
+                        <h1>Challenge Over!</h1>
+                        <h2>You got {tallyRight} right and {tallyWrong} wrong.</h2>
+                    </div>
+                )}
 
-                <div className={styles.bottomPart}>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(E1OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E2OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E3OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E4OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E5OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E6OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E7OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E8OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E9OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E10OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E11OnLilE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(EOnLilE)} className={styles.button}></button>
-                    </div>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(BOnB)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(B1OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B2OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B3OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B4OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B5OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B6OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B7OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B8OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B9OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B10OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(B11OnB)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(BOnB)} className={styles.button}></button>
-                    </div>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(GOnG)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(G1OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G2OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G3OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G4OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G5OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G6OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G7OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G8OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G9OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G10OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(G11OnG)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(GOnG)} className={styles.button}></button>
-                    </div>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(D1OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D2OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D3OnD)} className={styles.button}>O</button>
-                        <button onClick={() => handleNoteClick(D4OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D5OnD)} className={styles.button}>O</button>
-                        <button onClick={() => handleNoteClick(D6OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D7OnD)} className={styles.button}>O</button>
-                        <button onClick={() => handleNoteClick(D8OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D9OnD)} className={styles.button}>O</button>
-                        <button onClick={() => handleNoteClick(D10OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(D11OnD)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(DOnD)} className={styles.button}>O <br /> O</button>
-                    </div>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(AOnA)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(A1OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A2OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A3OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A4OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A5OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A6OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A7OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A8OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A9OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A10OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(A11OnA)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(AOnA)} className={styles.button}></button>
-                    </div>
-                    <div className={styles.buttonFill}>
-                        <button onClick={() => handleNoteClick(EOnE)} className={styles.button}>open</button>
-                        <button onClick={() => handleNoteClick(E1OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E2OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E3OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E4OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E5OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E6OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E7OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E8OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E9OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E10OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(E11OnE)} className={styles.button}></button>
-                        <button onClick={() => handleNoteClick(EOnE)} className={styles.button}></button>
-                    </div>
-                </div>
-            </div> <br /><br />
+            </div> <br /><br /> <br /> <br />
+
+            <div className={styles.resultsButtons}>
+                <button onClick={handlePlayAgain} className={styles.button}>Practice Mode</button>
+                <br />
+                <button onClick={() => setMode('challenge')} className={styles.button}>Start 1 Minute Challenge</button>
+            </div> <br /> <br /> <br /> <br />
 
             <div className={globalStyles.flexNoWrap}>
                 <button><Link href="/method/guitar/findNoteOnString">Back to: <br /> Find Note On String Lesson</Link></button>
